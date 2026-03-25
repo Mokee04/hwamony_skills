@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony CBT Chats"
+  short_description: "Structured CBT-style support conversations"
+  default_prompt: "Use $hwamony-cbt-chats to explain CBT or guide a safe CBT-style conversation with thought records, reframing, or small action steps."

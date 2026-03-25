@@ -1,0 +1,33 @@
+Hwamony Skills Repository License Overview
+
+Copyright (c) 2026 Hwamony
+
+This repository uses a split license model.
+
+1. Code license
+
+All original code in `scripts/` directories is licensed under the MIT License.
+
+See:
+- `LICENSES/MIT.txt`
+
+2. Documentation and skill-text license
+
+All original `SKILL.md`, `README.md`, and other prose documentation in this repository
+are licensed under the Creative Commons Attribution 4.0 International license
+(`CC BY 4.0`).
+
+See:
+- `LICENSES/CC-BY-4.0.md`
+
+3. Exceptions
+
+- Third-party dependencies, SDKs, and external materials remain under their own licenses.
+- Files generated inside local virtual environments such as `.venv/` are not part of this repository's original licensed works.
+- Branding, repository names, and contributor identities are not separately licensed as trademarks.
+
+4. Practical summary
+
+- You may use, modify, and redistribute code from `scripts/` under MIT.
+- You may share and adapt the repository's skill and documentation text under CC BY 4.0, with attribution.
+- When reusing material, keep license notices intact and provide clear credit.

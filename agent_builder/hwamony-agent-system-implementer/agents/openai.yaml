@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Agent Implementer"
+  short_description: "Implement chosen model-system architecture"
+  default_prompt: "Use $hwamony-agent-system-implementer to implement the selected agent or single-model system with prompts, configs, and runtime code."

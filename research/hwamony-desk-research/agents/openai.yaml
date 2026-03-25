@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Desk Research"
+  short_description: "Stage desk research with source preservation"
+  default_prompt: "Use $hwamony-desk-research to scope a research topic, propose sources, run staged desk research, and save the process and source texts into a project folder."

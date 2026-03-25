@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Creative Thinking"
+  short_description: "Expand combine and surface strong ideas"
+  default_prompt: "Use $hwamony-creative-thinking to generate many possibilities and surface the strongest candidates."

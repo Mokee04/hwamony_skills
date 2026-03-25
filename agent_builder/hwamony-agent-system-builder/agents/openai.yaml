@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Agent Builder"
+  short_description: "Design agent or model systems end-to-end"
+  default_prompt: "Use $hwamony-agent-system-builder to design an AI agent or single-model system from requirements to evaluation."

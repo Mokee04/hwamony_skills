@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Agent Evaluator"
+  short_description: "Test, log, and iterate model systems"
+  default_prompt: "Use $hwamony-agent-system-evaluator to test an AI agent or single-model system, log runs, score outputs, and manage iteration."

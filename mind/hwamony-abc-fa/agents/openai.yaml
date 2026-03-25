@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony ABC FA"
+  short_description: "Guide ABC behavior analysis interviews"
+  default_prompt: "Use $hwamony-abc-fa to interview the user and explain an ABC functional analysis."
