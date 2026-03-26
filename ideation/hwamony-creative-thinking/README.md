@@ -1,47 +1,68 @@
 # Hwamony Creative Thinking
 
-A creative ideation skill for diagnosing the hidden problem, exploring widely, and converging on candidates worth testing.
+`hwamony-creative-thinking` helps founders, product teams, and creators turn fuzzy briefs into structured concept maps, stronger idea combinations, and a shortlist that still preserves at least one surprising but viable direction.
 
-## 🧠 What It Does
-
-Use this skill when a prompt is vague, the problem may be misframed, or you need more than a brainstorm for naming, concepts, positioning, or solution paths. It diagnoses the hidden tension first, expands into multiple directions, then clusters and narrows them into a shortlist of stronger candidates for creative problem solving.
+This skill is for moments when a generic brainstorm is not enough. It defines the core concepts behind the brief, maps them visually, combines distant branches into candidate ideas, and narrows the set without flattening everything into the same safe answer. It is especially useful when you want both better structure and more interesting options.
 
 ## ✨ Why It Is Different
 
-- it starts by diagnosing the hidden problem before generating ideas
-- it is built to converge toward a shortlist, not end with a brainstorm dump
-- it handles naming, concepts, positioning, and solution paths with the same diagnose-widen-reduce logic
-- it is better suited to ambiguous or misframed problems than generic ideation prompts
+- it turns the brief into core concepts before proposing solutions
+- it can render a mind map with Python instead of only describing the structure in prose
+- it looks for distant-branch combinations, not only obvious neighboring ideas
+- it protects at least one contrarian or weird-but-viable lane so the shortlist stays creatively useful
+- it can still converge into a recommendation instead of ending with a brainstorm dump
 
-## 🎯 Best For
+## 🧭 When To Use It
 
-- situations where the stated problem may be the wrong problem
-- naming, positioning, concepts, or solution paths that need both breadth and judgment
-- teams that want interesting options and a practical shortlist
+- you need to figure out what problem you are actually solving before ideating
+- you want concept families and a visual map before narrowing options
+- you want stronger product, feature, campaign, naming, or positioning directions
+- you want an idea set that includes one surprising but still workable lane
+- you plan to iterate based on feedback instead of treating the first answer as final
 
-## 🚫 Not Just Brainstorming
+## 📦 What It Produces
 
-This skill is strongest when raw ideation is not enough.
+- a compact restatement of the brief and task mode
+- core concepts and concept families
+- a mind map summary, and optionally a rendered SVG or PNG
+- distant-concept combinations translated into candidate ideas
+- a shortlist with tradeoffs
+- a recommended lane plus what to refine in the next loop
 
-If the real need is to surface the hidden tension, generate several serious directions, compare them, and leave with a narrower set of strong candidates, this is where it helps most.
+## 🧠 How It Works
 
-## 🧭 Use It When
+1. define the core concepts behind the task
+2. organize them into a mind map
+3. combine distant branches into stronger ideas
+4. preserve a non-obvious lane while narrowing
+5. revise the concept system when the user gives feedback
 
-- you need product or feature ideas
-- you want naming or positioning directions
-- you are stuck with a vague problem and need better framing first
-- you want a shortlist, not just a pile of ideas
+## 🚀 Start Here
 
-## 📦 What It Is Good At
+Safe examples:
 
-- finding the deeper problem
-- exploring multiple directions without collapsing too early
-- clustering and comparing options
-- ending with high-potential candidates
+- `Use $hwamony-creative-thinking to break this onboarding problem into core concepts, show the mind map structure, and suggest 4 solution directions.`
+- `Use $hwamony-creative-thinking to map out service naming directions for this AI product, then keep one safer lane and one more surprising lane in the shortlist.`
 
-## ✍️ Example Prompts
+Hook examples:
 
-- `Use $hwamony-creative-thinking to name a new AI research product, then narrow the options to the 7 strongest names with rationale and tone differences.`
-- `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow problem before we generate solution directions.`
-- `Use $hwamony-creative-thinking to generate and narrow positioning ideas for our new service instead of stopping at a brainstorm dump.`
-- `Use $hwamony-creative-thinking to figure out whether our real problem is onboarding, trust, or feature clarity before we invent more features.`
+- `Use $hwamony-creative-thinking to figure out whether our team is solving the wrong problem, turn the brief into a visual concept map, and then combine distant branches into 5 product bets.`
+- `Use $hwamony-creative-thinking to design an indie-game sprite production system, keep one contrarian architecture alive through the shortlist, and tell us why it is weird-but-viable instead of just weird.`
+
+## 🔎 What Makes It Worth Trying
+
+- it is not just “more ideas”; it gives you a visible concept structure you can react to
+- it handles both safe and surprising directions in the same workflow
+- it works well for tasks that need feedback loops, not one-shot inspiration
+
+## 📁 Proof In This Skill
+
+- `scripts/render_mindmap.py` renders concept maps to SVG or PNG
+- `scripts/combine_options.py` helps turn branches into structured combination sets
+- `eval/` contains fixed cases and regression runs for scope control, feedback loops, and novelty preservation
+
+## ⚠️ Boundaries
+
+- this skill is strongest for structured ideation, not for market research by itself
+- if the recommendation depends on current vendor capabilities, pricing, or live facts, those should be verified before locking a direction
+- surprising lanes are meant to stay viable, not to become random speculation

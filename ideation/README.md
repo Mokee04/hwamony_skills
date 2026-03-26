@@ -10,13 +10,13 @@ This category is most useful when the first question is not “give me 20 ideas,
 
 [Open skill README](hwamony-creative-thinking/README.md)
 
-A creative workflow that combines:
+A concept-mapping ideation workflow that combines:
 
-- problem diagnosis
-- divergence
-- clustering
-- comparison
-- convergence into a shortlist
+- core concept definition
+- Python-rendered mind maps
+- distant-branch combinations
+- shortlist convergence
+- preservation of one surprising but viable lane
 
 Use this when you want help with:
 
@@ -25,7 +25,7 @@ Use this when you want help with:
 - concept generation
 - positioning or messaging
 - feature ideation
-- turning many possibilities into a smaller set of strong candidates
+- turning many possibilities into a smaller set of strong candidates without flattening every option into the same safe answer
 
 ### `hwamony-service-naming-copy`
 
@@ -46,6 +46,7 @@ Use this when you want help with:
 - generating multiple directions without collapsing too early
 - combining ideas into stronger options
 - ending with recommendations instead of raw brainstorming only
+- keeping one contrarian or weird-but-viable direction alive long enough to judge it properly
 - helping teams move from vague excitement to a smaller set of serious options
 - turning a service brief into naming options and launch copy that fit the live category
 
@@ -68,9 +69,9 @@ It is built for moments when you want:
 
 ## ✍️ Quick Prompts
 
-- `Use $hwamony-creative-thinking to figure out why users keep asking for more features but still do not adopt the product.`
-- `Use $hwamony-creative-thinking to generate naming directions for this AI product, then narrow to the 5 strongest candidates with rationale.`
-- `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow before we brainstorm solutions.`
+- `Use $hwamony-creative-thinking to figure out why users keep asking for more features but still do not adopt the product, then map the core concepts before we generate fixes.`
+- `Use $hwamony-creative-thinking to generate naming directions for this AI product, then narrow to the 5 strongest candidates while keeping one more surprising lane alive.`
+- `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow, render the concept map, and only then brainstorm solutions.`
 - `Use $hwamony-service-naming-copy to turn this service brief into Korean, English, and hybrid naming candidates with launch copy for the top winner.`
 
 ## ⚖️ License Note

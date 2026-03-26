@@ -37,7 +37,7 @@ If you only try a few first, start with the flagship skills below.
 - [`hwamony-desk-research`](research/hwamony-desk-research/README.md)
   Turn one-shot searching into staged desk research with saved sources and reusable artifacts.
 - [`hwamony-creative-thinking`](ideation/hwamony-creative-thinking/README.md)
-  Diagnose the hidden problem, widen the space, then narrow to strong candidates.
+  Turn a fuzzy brief into core concepts, a visual map, distant-combination ideas, and a shortlist that still keeps one surprising lane alive.
 - [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
   Turn a promising skill into a repeatable eval loop with fixed cases, evidence, and patch history.
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
@@ -65,7 +65,7 @@ If you only try a few first, start with the flagship skills below.
 
 - `Use $hwamony-prompt-architect to turn this messy system prompt into a production-ready prompt spec with schema, tool rules, and model guidance.`
 - `Use $hwamony-desk-research to turn this vague market question into a scoped research folder with preserved sources and a final memo.`
-- `Use $hwamony-creative-thinking to find the real product problem before we brainstorm features.`
+- `Use $hwamony-creative-thinking to find the real product problem, map the concept space, and keep one contrarian option alive before we commit to the safe answer.`
 - `Use $hwamony-skill-harness to turn this messy skill into fixed eval cases, run evidence, and a patch loop we can rerun after every edit.`
 - `Use $hwamony-service-naming-copy to turn this service brief into strong naming lanes, shortlist candidates, and launch-ready copy.`
 - `Use $hwamony-skill-showcase to rewrite this internal-only skill so strangers on GitHub immediately understand it and the repo metadata is ready to ship.`
