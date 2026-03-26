@@ -1,6 +1,6 @@
 # Hwamony Debate Panel
 
-Run a real multi-agent debate instead of having one assistant fake both sides.
+A multi-agent debate workflow for running a real debate instead of having one assistant fake both sides.
 
 ## 🧠 What It Does
 

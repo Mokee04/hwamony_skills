@@ -1,8 +1,8 @@
 # Ideation Skills
 
-Skills for turning fuzzy problems into stronger idea directions, not just bigger brainstorm dumps.
+Creative ideation skills for turning fuzzy problems into stronger idea directions, naming options, positioning angles, and launch-ready concepts.
 
-This category is most useful when the first question is not “give me 20 ideas,” but “what problem are we actually solving, and which directions are worth testing?”
+This category is most useful when the first question is not “give me 20 ideas,” but “what problem are we actually solving, which directions are worth testing, and how should we name or position the result?”
 
 ## 🧰 Included Skills
 

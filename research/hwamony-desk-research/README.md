@@ -1,10 +1,10 @@
 # Hwamony Desk Research
 
-Turn one-shot searching into staged desk research with saved sources, batch checkpoints, and reusable artifacts.
+An AI research workflow skill that turns one-shot searching into staged desk research with saved sources, batch checkpoints, and reusable artifacts.
 
 ## 🧠 What It Does
 
-Use this skill when a topic needs more than one-shot search: it clarifies the question, sets a source plan, and researches in batches with checkpoints. It saves the work as a reusable project folder with preserved source texts, findings, and citations.
+Use this skill when a topic needs more than one-shot search: it clarifies the question, sets a source plan, and researches in batches with checkpoints. It saves the work as a reusable research project folder with preserved source texts, findings, and citations.
 
 ## ✨ Why It Is Different
 

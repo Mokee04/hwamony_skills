@@ -1,10 +1,10 @@
 # Hwamony Creative Thinking
 
-Diagnose the hidden problem, explore widely, then converge on candidates worth testing.
+A creative ideation skill for diagnosing the hidden problem, exploring widely, and converging on candidates worth testing.
 
 ## 🧠 What It Does
 
-Use this skill when a prompt is vague, the problem may be misframed, or you need more than a brainstorm for naming, concepts, positioning, or solution paths. It diagnoses the hidden tension first, expands into multiple directions, then clusters and narrows them into a shortlist of stronger candidates.
+Use this skill when a prompt is vague, the problem may be misframed, or you need more than a brainstorm for naming, concepts, positioning, or solution paths. It diagnoses the hidden tension first, expands into multiple directions, then clusters and narrows them into a shortlist of stronger candidates for creative problem solving.
 
 ## ✨ Why It Is Different
 

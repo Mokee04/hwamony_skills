@@ -1,8 +1,8 @@
 # Research Skills
 
-Skills for turning broad questions into scoped research, saved evidence, and arguments you can inspect later.
+AI research workflow skills for turning broad questions into scoped desk research, saved evidence, and arguments you can inspect later.
 
-This category is for work that needs more than a quick answer: clarifying the question, collecting evidence, preserving artifacts, or pressure-testing a topic through competing viewpoints.
+This category is for work that needs more than a quick answer: clarifying the question, collecting evidence, preserving research artifacts, or pressure-testing a topic through competing viewpoints.
 
 ## 🚀 Best Starting Points
 

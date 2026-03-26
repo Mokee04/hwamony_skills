@@ -1,6 +1,6 @@
 # Hwamony Service Naming Copy
 
-Turn a service brief into market-aware names and launch copy grounded in the live category.
+A service naming and launch copy skill that turns a brief into market-aware names grounded in the live category.
 
 ## 🧠 What It Does
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Skill Showcase"
-  short_description: "Package skills for public discovery and GitHub stars"
-  default_prompt: "Use $hwamony-skill-showcase to turn this skill into a public-facing README, example set, and launch-ready GitHub showcase."
+  short_description: "Package skills for GitHub discoverability with stronger README copy, metadata, and launch surfaces"
+  default_prompt: "Use $hwamony-skill-showcase to turn this skill into a search-friendly, public-facing GitHub showcase with a sharper README opening, example set, repository description, topics, and launch-ready copy."

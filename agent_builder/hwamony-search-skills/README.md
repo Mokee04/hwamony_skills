@@ -1,6 +1,6 @@
 # Hwamony Search Skills
 
-Search GitHub for installable agent skills and bring the best match into your toolkit.
+A GitHub skill discovery workflow for finding installable agent skills and bringing the best match into your toolkit.
 
 ## 🧠 What It Does
 

@@ -1,8 +1,8 @@
 # Agent Builder Skills
 
-Skills for turning a fuzzy AI idea into a designed system, a working implementation, and a more publishable asset.
+AI agent builder and prompt engineering skills for turning a fuzzy idea into a designed system, working implementation, repeatable evaluation, and a more publishable asset.
 
-This category is strongest when the work stops being “just write me a prompt” and turns into architecture, routing, tooling, evaluation, or reusable system design.
+This category is strongest when the work stops being “just write me a prompt” and turns into AI agent architecture, prompt engineering, tooling, evaluation, or reusable system design.
 
 ## 🚀 Best Starting Points
 
@@ -101,11 +101,12 @@ Use this when you want to:
 
 [Open skill README](hwamony-skill-showcase/README.md)
 
-Transforms internal skills into public-facing showcases with clearer docs, sharper examples, and launch-ready copy.
+Transforms internal skills into public-facing showcases with SEO-friendly README copy, sharper examples, repository metadata, and launch-ready copy.
 
 Use this when you want to:
 
 - rewrite a README for humans instead of internal use only
+- improve GitHub discoverability with clearer descriptions, topics, and first-screen wording
 - clarify who the skill is for and when to use it
 - generate example prompts and demo ideas
 - prepare GitHub descriptions, topics, or launch copy
@@ -147,7 +148,7 @@ Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-
 - `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
 - `Use $hwamony-skill-harness to test this skill, record the failures, and improve it with a repeatable eval loop.`
 - `Use $hwamony-skill-harness to turn this messy but promising skill into fixed cases, run folders, and a patch history we can trust.`
-- `Use $hwamony-skill-showcase to rewrite this internal skill so other builders instantly understand when to use it.`
+- `Use $hwamony-skill-showcase to rewrite this internal skill so GitHub visitors instantly understand it and search-friendly metadata is ready to ship.`
 
 ## ⚖️ License Note
 

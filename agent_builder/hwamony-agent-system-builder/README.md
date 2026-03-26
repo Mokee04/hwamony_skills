@@ -1,10 +1,10 @@
 # Hwamony Agent System Builder
 
-Design AI agent systems from fuzzy requirements to a concrete implementation decision.
+An AI agent architecture skill for turning fuzzy requirements into a concrete implementation decision.
 
 ## 🧠 What It Does
 
-This skill turns an early idea into a structured agent project. It clarifies requirements, writes a task brief, compares architecture options, defines the message-history strategy, and prepares a clean handoff to implementation or evaluation.
+This skill turns an early idea into a structured AI agent project. It clarifies requirements, writes a task brief, compares architecture options, defines the message-history strategy, and prepares a clean handoff to implementation or evaluation.
 
 ## ✨ Why It Is Different
 

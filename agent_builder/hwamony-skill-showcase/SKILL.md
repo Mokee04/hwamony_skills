@@ -1,6 +1,6 @@
 ---
 name: hwamony-skill-showcase
-description: Turn a local skill or skill repository into a public-facing showcase with clearer positioning, README structure, example prompts, demo ideas, and launch-ready GitHub copy. Use when the user wants to publish a skill, improve discoverability, rewrite documentation for humans, prepare a repo for stars, or create concise showcase copy for directories, releases, or awesome lists.
+description: Turn a local skill or skill repository into a public-facing showcase with clearer positioning, SEO-friendly README structure, example prompts, demo ideas, discoverability improvements, and launch-ready GitHub copy. Use when the user wants to publish a skill, improve GitHub or search discoverability, rewrite documentation for humans, prepare a repo for stars, or create concise showcase copy for directories, releases, or awesome lists.
 ---
 
 # Hwamony Skill Showcase
@@ -9,7 +9,7 @@ description: Turn a local skill or skill repository into a public-facing showcas
 
 Use this skill when the user has already built a skill, but the presentation is not yet doing the work.
 
-This skill reframes the asset for public discovery: identify what problem the skill solves, who should care, what proof is available, and how to present it in a README, category intro, repo blurb, demo prompt set, and launch copy without overselling.
+This skill reframes the asset for public discovery: identify what problem the skill solves, who should care, what proof is available, and how to present it in a README, category intro, repo blurb, demo prompt set, repository description, topics, and launch copy without overselling.
 
 Prefer evidence over hype. Strong public docs should make the skill easier to trust and easier to try in under 5 minutes.
 
@@ -40,6 +40,7 @@ Common deliverables:
 
 - a one-line value proposition
 - a sharper README opening
+- SEO-friendly phrasing that still reads naturally to humans
 - "who this is for" and "when to use it"
 - 3-5 example prompts
 - 3-5 creative showcase examples that make the skill feel immediately worth trying
@@ -151,6 +152,13 @@ Good README openings usually answer, in order:
 3. why it is different
 4. how to try it now
 
+When discoverability matters, make the first screen legible to both people and search engines:
+
+- place the core job words early in the title, one-liner, and opening paragraph
+- name the asset type clearly, such as `skill`, `workflow`, `README`, `GitHub repository`, or `agent skill`
+- use concrete discovery terms when they are real, such as `GitHub discoverability`, `repository description`, `topics`, `README`, `launch copy`, or `SEO-friendly`
+- keep phrasing natural; do not repeat keywords mechanically
+
 Prefer:
 
 - concrete nouns over abstract claims
@@ -217,6 +225,7 @@ Add or improve:
 - more vivid, tempting use examples that make the skill feel desirable rather than merely understandable
 - expected artifacts or outcomes
 - demo steps
+- README openings that naturally include high-intent search terms when appropriate
 - GitHub description
 - suggested repository topics
 - release title and release notes
@@ -232,6 +241,14 @@ If the repo lacks proof, say so plainly and recommend the lightest proof asset t
 Use [references/distribution-checklist.md](references/distribution-checklist.md) when preparing launch surfaces.
 
 When writing examples, do not stop at safe generic prompts.
+
+When the user explicitly asks for SEO or search visibility help:
+
+- improve the README opening first
+- make the repository description concrete and keyword-aware
+- suggest focused topics rather than broad buzzwords
+- prefer discoverability language that matches the actual artifact
+- avoid promising Google ranking outcomes you cannot verify
 
 Good showcase examples should:
 

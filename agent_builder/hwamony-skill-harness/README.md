@@ -1,6 +1,6 @@
 # Hwamony Skill Harness
 
-Turn a promising skill into a repeatable eval loop with fixed cases, run-by-run evidence, and patch history.
+A skill evaluation workflow for turning a promising skill into a repeatable eval loop with fixed cases, run-by-run evidence, and patch history.
 
 ## 🧠 What It Does
 

@@ -1,10 +1,10 @@
 # Hwamony Agent System Evaluator
 
-Evaluate a built AI system with run logs, rubrics, and iteration-ready feedback.
+An AI agent evaluation skill for testing a built system with run logs, rubrics, and iteration-ready feedback.
 
 ## 🧠 What It Does
 
-This skill treats evaluation as a repeatable workflow, not a one-off opinion. It reads implementation artifacts, writes or updates the test plan, initializes run folders, logs inputs and outputs, scores results with a rubric, and captures the next improvement loop.
+This skill treats AI agent evaluation as a repeatable workflow, not a one-off opinion. It reads implementation artifacts, writes or updates the test plan, initializes run folders, logs inputs and outputs, scores results with a rubric, and captures the next improvement loop.
 
 ## ✨ Why It Is Different
 

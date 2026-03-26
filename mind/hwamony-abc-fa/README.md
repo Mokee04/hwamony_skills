@@ -1,6 +1,6 @@
 # Hwamony ABC Functional Analysis
 
-Map antecedents, behavior, and consequences to form a careful hypothesis about why a behavior happens.
+A behavior analysis skill for mapping antecedents, behavior, and consequences to form a careful hypothesis about why a behavior happens.
 
 ## 🧠 What It Does
 

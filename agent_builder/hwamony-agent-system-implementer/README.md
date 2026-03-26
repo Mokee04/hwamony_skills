@@ -1,10 +1,10 @@
 # Hwamony Agent System Implementer
 
-Turn a chosen agent design into prompts, configs, runtime code, and history adapters.
+An AI agent implementation skill for turning a chosen design into prompts, configs, runtime code, and history adapters.
 
 ## 🧠 What It Does
 
-This skill picks up after the architecture decision is made. It reads the builder artifacts, confirms the stack, generates prompts and config files, implements the runtime, and handles vendor-aware history design so the system is ready for evaluation.
+This skill picks up after the architecture decision is made. It reads the builder artifacts, confirms the stack, generates prompts and config files, implements the runtime, and handles vendor-aware history design so the AI system is ready for evaluation.
 
 ## ✨ Why It Is Different
 

@@ -1,10 +1,10 @@
 # Hwamony Prompt Architect
 
-Design prompts as schema-first, tool-aware systems, not one-off strings that break the moment the task gets real.
+A prompt engineering skill for designing schema-first, tool-aware prompts and agent workflows instead of one-off strings that break the moment the task gets real.
 
 ## 🧠 What It Does
 
-Use this skill when you need a new system prompt, a prompt refactor, or a decision on whether a task should stay single-prompt or become an agent workflow. It covers model routing, tool-aware and schema-first design, and production prompt systems with caching, evals, versioning, and rollback.
+Use this skill when you need a new system prompt, a prompt refactor, or a decision on whether a task should stay single-prompt or become an agent workflow. It covers prompt engineering, model routing, tool-aware and schema-first design, and production prompt systems with caching, evals, versioning, and rollback.
 
 ## ✨ Why It Is Different
 

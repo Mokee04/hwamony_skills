@@ -1,8 +1,8 @@
 # Mind Skills
 
-This folder contains conversational skills for understanding behavior, thoughts, and emotional patterns in a structured way.
+Structured self-reflection and behavior analysis skills for understanding behavior, thoughts, and emotional patterns in a careful, practical way.
 
-These are not meant to replace therapy, diagnosis, or crisis support. They are designed for careful, practical conversations that help users make sense of what is happening and what to look at next.
+These are not meant to replace therapy, diagnosis, or crisis support. They are designed for careful conversations using structured approaches such as ABC functional analysis and CBT-style reflection so users can make sense of what is happening and what to look at next.
 
 ## 🚀 Best Starting Points
 

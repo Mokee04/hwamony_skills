@@ -1,6 +1,6 @@
 # Hwamony CBT Chats
 
-Guide safe, structured CBT-style conversations without drifting into diagnosis or crisis care.
+A CBT-style reflection skill for guiding safe, structured conversations without drifting into diagnosis or crisis care.
 
 ## 🧠 What It Does
 
