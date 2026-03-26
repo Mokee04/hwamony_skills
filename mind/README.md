@@ -4,13 +4,13 @@ This folder contains conversational skills for understanding behavior, thoughts,
 
 These are not meant to replace therapy, diagnosis, or crisis support. They are designed for careful, practical conversations that help users make sense of what is happening and what to look at next.
 
-## Best Starting Points
+## 🚀 Best Starting Points
 
 - understanding why a behavior keeps happening in context
 - examining a recent difficult situation with a CBT-style lens
 - turning vague emotional or behavioral confusion into clearer structure
 
-## Included Skills
+## 🧰 Included Skills
 
 ### `hwamony-abc-fa`
 
@@ -39,21 +39,21 @@ Use this when you want help with:
 - reframing more carefully
 - choosing a small next step
 
-## What These Skills Are Good At
+## ✨ What These Skills Are Good At
 
 - turning vague situations into clearer structure
 - asking the next useful question instead of dumping a long questionnaire
 - staying practical and grounded
 - keeping a calm, collaborative tone
 
-## Good Fit
+## 🎯 Good Fit
 
 - coaching-style conversations
 - self-reflection with structure
 - behavior interpretation
 - thought records and reframing
 
-## Not The Right Tool For
+## ⚠️ Not The Right Tool For
 
 - crisis intervention
 - urgent safety situations
@@ -62,12 +62,12 @@ Use this when you want help with:
 
 If a conversation involves immediate danger, self-harm, abuse, violence, or acute medical risk, use professional or emergency support instead of relying on these skills.
 
-## Quick Prompts
+## ✍️ Quick Prompts
 
 - `Use $hwamony-abc-fa to help me understand why this behavior keeps happening around homework time.`
 - `Use $hwamony-cbt-chats to walk me through a recent situation, the automatic thought I had, and a more balanced reframe.`
 
-## License Note
+## ⚖️ License Note
 
 - `SKILL.md` and this README are shared under `CC BY 4.0`
 - any original code inside nested `scripts/` directories is shared under the MIT License

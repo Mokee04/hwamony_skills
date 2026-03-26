@@ -40,6 +40,12 @@ Default structure:
 3. 3-5 bullets for key use cases or included skills
 4. quickstart or "start here" path
 
+Optional polish:
+
+- add a small number of well-chosen emojis when they improve first-screen scanability
+- common good fits: `🚀` for launch/start, `✨` for differentiation, `🧭` for guidance, `⚠️` for caveats, `📦` for artifacts, `🔎` for research
+- keep usage restrained; the emoji should support the structure, not become the structure
+
 ### 4. Example Prompts
 
 Good example prompts:
@@ -106,3 +112,4 @@ Useful launch surfaces:
 - If there are multiple skills, highlight the top 2-3 instead of giving every item equal weight.
 - Write the copy directly from the repo evidence instead of delegating wording generation to extra comparison models.
 - If alternate phrasing helps, draft 2-3 variants yourself and keep only the strongest one or two.
+- Emojis can be used to decorate a README when they clearly improve scanability or warmth, but keep them sparse and intentional.

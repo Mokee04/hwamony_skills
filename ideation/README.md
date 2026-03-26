@@ -4,7 +4,7 @@ Skills for turning fuzzy problems into stronger idea directions, not just bigger
 
 This category is most useful when the first question is not “give me 20 ideas,” but “what problem are we actually solving, and which directions are worth testing?”
 
-## Included Skills
+## 🧰 Included Skills
 
 ### `hwamony-creative-thinking`
 
@@ -40,7 +40,7 @@ Use this when you want help with:
 - tagline, headline, subheadline, or CTA copy
 - candidate-name critique grounded in current market language
 
-## What This Category Is Good At
+## ✨ What This Category Is Good At
 
 - finding the hidden problem underneath the surface ask
 - generating multiple directions without collapsing too early
@@ -49,14 +49,14 @@ Use this when you want help with:
 - helping teams move from vague excitement to a smaller set of serious options
 - turning a service brief into naming options and launch copy that fit the live category
 
-## Good Fit
+## 🎯 Good Fit
 
 - founders exploring product directions
 - teams naming a service or feature
 - creators looking for fresh angles
 - anyone who wants both breadth and a practical shortlist
 
-## Working Style
+## 🧭 Working Style
 
 This category is especially useful when you do not just want “more ideas.”
 
@@ -66,14 +66,14 @@ It is built for moments when you want:
 - clearer distinctions between options
 - a path from exploration to decision
 
-## Quick Prompts
+## ✍️ Quick Prompts
 
 - `Use $hwamony-creative-thinking to figure out why users keep asking for more features but still do not adopt the product.`
 - `Use $hwamony-creative-thinking to generate naming directions for this AI product, then narrow to the 5 strongest candidates with rationale.`
 - `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow before we brainstorm solutions.`
 - `Use $hwamony-service-naming-copy to turn this service brief into Korean, English, and hybrid naming candidates with launch copy for the top winner.`
 
-## License Note
+## ⚖️ License Note
 
 - `SKILL.md` and this README are shared under `CC BY 4.0`
 - any original code inside nested `scripts/` directories is shared under the MIT License

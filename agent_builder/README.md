@@ -4,7 +4,7 @@ Skills for turning a fuzzy AI idea into a designed system, a working implementat
 
 This category is strongest when the work stops being “just write me a prompt” and turns into architecture, routing, tooling, evaluation, or reusable system design.
 
-## Best Starting Points
+## 🚀 Best Starting Points
 
 - building a new agent or assistant from requirements
 - deciding whether a task should stay single-prompt or become a workflow
@@ -12,7 +12,7 @@ This category is strongest when the work stops being “just write me a prompt�
 - evaluating whether a built system is actually getting better
 - packaging a good internal skill so other people can understand and reuse it
 
-## Included Skills
+## 🧰 Included Skills
 
 ### `hwamony-agent-system-builder`
 
@@ -97,7 +97,7 @@ Use this when you want to:
 - prepare GitHub descriptions, topics, or launch copy
 - turn a private-looking skill into a showcase-ready open source asset
 
-## What This Category Is Good At
+## ✨ What This Category Is Good At
 
 - turning fuzzy AI ideas into structured projects
 - reducing architecture guesswork
@@ -105,7 +105,7 @@ Use this when you want to:
 - connecting design, implementation, and evaluation into one loop
 - helping strong internal skills look legible and valuable from the outside
 
-## Good Fit
+## 🎯 Good Fit
 
 - AI engineers
 - prompt engineers
@@ -113,7 +113,7 @@ Use this when you want to:
 - workflow designers
 - teams building internal assistants or production agents
 
-## Suggested Reading Order
+## 🧭 Suggested Reading Order
 
 If you are new to this folder, a simple path is:
 
@@ -123,7 +123,7 @@ If you are new to this folder, a simple path is:
 
 Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-search-skills` when you want to extend your toolkit with external skills, and `hwamony-skill-showcase` when the work shifts from building the skill to publishing it well.
 
-## Quick Prompts
+## ✍️ Quick Prompts
 
 - `Use $hwamony-agent-system-builder to compare 3 architectures for this support copilot and tell me which one is easiest to ship first.`
 - `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
@@ -131,7 +131,7 @@ Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-
 - `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
 - `Use $hwamony-skill-showcase to rewrite this internal skill so other builders instantly understand when to use it.`
 
-## License Note
+## ⚖️ License Note
 
 - `SKILL.md` and this README are shared under `CC BY 4.0`
 - any original code inside nested `scripts/` directories is shared under the MIT License

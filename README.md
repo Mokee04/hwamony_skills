@@ -6,14 +6,14 @@ This repo is a shareable collection of skills across agent building, research, i
 
 If you only try a few first, start with the flagship skills below.
 
-## Why Star This Repo
+## ⭐ Why Star This Repo
 
 - the skills are built as reusable workflows, not random prompt snippets
 - many of them produce files, folders, or handoff artifacts instead of chat-only output
 - the collection covers the full loop from ideation to research to agent building to publishable docs
 - each skill is documented so you can judge fit quickly instead of reading a giant monorepo blind
 
-## What You Can Do With It
+## 🧩 What You Can Do With It
 
 - turn a fragile prompt into a schema-first prompt system
 - turn a broad question into staged desk research with saved sources
@@ -21,7 +21,7 @@ If you only try a few first, start with the flagship skills below.
 - turn a service brief into market-aware names and launch copy
 - turn a good internal skill into a public-facing README and launch-ready showcase
 
-## Start Here
+## 🚀 Start Here
 
 - [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
   Design prompts as reusable systems with routing, schemas, tools, and production constraints.
@@ -32,7 +32,7 @@ If you only try a few first, start with the flagship skills below.
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
   Turn an internal skill into a public-facing README, examples, and launch-ready GitHub copy.
 
-## Why This Repo Feels Different
+## ✨ Why This Repo Feels Different
 
 - these are not one-shot prompt snippets; most skills define a reusable workflow
 - many skills save artifacts to disk instead of leaving the work trapped in chat
@@ -40,7 +40,7 @@ If you only try a few first, start with the flagship skills below.
 - several skills include scripts, references, or implementation scaffolds alongside the skill text
 - the repo is organized so you can inspect one skill at a time without learning the whole system first
 
-## Pick A Starting Point
+## 🧭 Pick A Starting Point
 
 - If your prompt keeps breaking when the task gets real: start with [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
 - If your research questions are broad and you need saved evidence: start with [`hwamony-desk-research`](research/hwamony-desk-research/README.md)
@@ -49,7 +49,7 @@ If you only try a few first, start with the flagship skills below.
 - If your skill works but still looks private or unclear: start with [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
 - If you are building an agent from scratch: start with [`hwamony-agent-system-builder`](agent_builder/hwamony-agent-system-builder/README.md)
 
-## Quick Examples
+## ✍️ Quick Examples
 
 - `Use $hwamony-prompt-architect to turn this messy system prompt into a production-ready prompt spec with schema, tool rules, and model guidance.`
 - `Use $hwamony-desk-research to turn this vague market question into a scoped research folder with preserved sources and a final memo.`
@@ -57,7 +57,7 @@ If you only try a few first, start with the flagship skills below.
 - `Use $hwamony-service-naming-copy to turn this service brief into strong naming lanes, shortlist candidates, and launch-ready copy.`
 - `Use $hwamony-skill-showcase to rewrite this internal-only skill so strangers on GitHub immediately understand why it is worth a star.`
 
-## Full Collection
+## 🗂️ Full Collection
 
 ### `mind`
 
@@ -83,13 +83,13 @@ If you only try a few first, start with the flagship skills below.
 - [`hwamony-search-skills`](agent_builder/hwamony-search-skills/README.md)
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
 
-## Repo Notes
+## 📝 Repo Notes
 
 - `hwamony-convergent-thinking` and `hwamony-divergent-thinking` are intentionally excluded.
 - skills are shared here without local `.env`, `.DS_Store`, or `autoresearch-*` artifacts
 - original code and prose use different licenses; see below
 
-## Copyright and Licensing
+## ⚖️ Copyright and Licensing
 
 Copyright (c) 2026 Hwamony.
 
@@ -104,10 +104,10 @@ See:
 - `LICENSES/MIT.txt`
 - `LICENSES/CC-BY-4.0.md`
 
-## Notes
+## 📎 Notes
 - each skill is meant to be inspectable on its own via its local `README.md`
 - category READMEs give a faster entry point if you want to browse by workflow instead of by file tree
 
-## Attribution
+## 🙏 Attribution
 
 If you reuse the skill text or documentation, please provide clear attribution to `Hwamony` and note any changes you made.

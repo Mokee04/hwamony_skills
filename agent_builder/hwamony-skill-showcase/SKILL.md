@@ -172,6 +172,16 @@ When editing copy:
 - keep safety boundaries visible for high-risk domains
 - make the first screen useful even to someone who never heard of the project
 - if context is incomplete, still lead with a best-effort first screen instead of an intake checklist
+- use emojis deliberately when they improve scanability, warmth, or section signaling in a README
+
+Emoji guidance:
+
+- use 0-6 emojis across a typical README, not an emoji on every line
+- best uses: section headers, quickstart cues, highlights, warnings, artifacts, and next steps
+- prefer clear signals such as launch, spark, search, note, warning, tool, or folder cues over random decoration
+- keep the emoji choice consistent with the skill's tone and audience
+- skip emojis entirely when the repo tone is formal, enterprise-heavy, or safety-sensitive
+- do not let emojis replace the actual meaning of the heading or sentence
 
 When context is partial, the opening should still do real work.
 

@@ -4,13 +4,13 @@ Skills for turning broad questions into scoped research, saved evidence, and arg
 
 This category is for work that needs more than a quick answer: clarifying the question, collecting evidence, preserving artifacts, or pressure-testing a topic through competing viewpoints.
 
-## Best Starting Points
+## 🚀 Best Starting Points
 
 - turning a vague market, policy, or category question into a structured research project
 - saving sources and notes so the work is auditable later
 - exploring a debate with explicit personas instead of one assistant improvising every side
 
-## Included Skills
+## 🧰 Included Skills
 
 ### `hwamony-desk-research`
 
@@ -41,7 +41,7 @@ Use this when you want:
 
 This skill includes a `.env.example` file because live runs may require API keys.
 
-## What This Category Is Good At
+## ✨ What This Category Is Good At
 
 - clarifying a topic before going deep
 - making research more inspectable and reproducible
@@ -49,14 +49,14 @@ This skill includes a `.env.example` file because live runs may require API keys
 - surfacing tensions, tradeoffs, and competing arguments
 - showing your work instead of hiding it in one polished answer
 
-## Good Fit
+## 🎯 Good Fit
 
 - researchers and analysts
 - founders exploring a market
 - teams preparing a memo or brief
 - users who want more than a one-shot answer
 
-## Working Style
+## 🧭 Working Style
 
 The skills here favor process over guesswork.
 
@@ -67,13 +67,13 @@ That means:
 - saving outputs for later reuse
 - making assumptions visible
 
-## Quick Prompts
+## ✍️ Quick Prompts
 
 - `Use $hwamony-desk-research to turn this broad market question into a scoped research folder with saved sources and a memo I can reuse next week.`
 - `Use $hwamony-desk-research to build a source-backed brief on this regulation change and preserve the raw source text.`
 - `Use $hwamony-debate-panel to turn this vague hot take into a real debate resolution with opposing panels and moderator questions.`
 
-## License Note
+## ⚖️ License Note
 
 - `SKILL.md` and this README are shared under `CC BY 4.0`
 - any original code inside nested `scripts/` directories is shared under the MIT License
