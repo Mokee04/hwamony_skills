@@ -7,6 +7,10 @@ description: Create, critique, and operate high-performance prompts and prompt s
 
 ## Purpose
 
+Design prompts as versioned, cache-aware, schema-first systems, not one-off strings.
+
+Use this skill when you need a new system prompt, a prompt refactor, or a decision on whether a task should stay single-prompt or become an agent workflow. It covers model routing, tool-aware and schema-first design, and production prompt systems with caching, evals, versioning, and rollback.
+
 Use this skill when the user wants:
 
 - a new system prompt, developer prompt, or reusable prompt template

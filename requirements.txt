@@ -1,5 +1,7 @@
 # Core runtime dependencies used by the shareable Hwamony skill scripts.
 openai
 google-genai
+langchain-openai
 langgraph
+pydantic
 certifi

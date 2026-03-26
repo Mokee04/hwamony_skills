@@ -4,9 +4,17 @@ This folder contains conversational skills for understanding behavior, thoughts,
 
 These are not meant to replace therapy, diagnosis, or crisis support. They are designed for careful, practical conversations that help users make sense of what is happening and what to look at next.
 
+## Best Starting Points
+
+- understanding why a behavior keeps happening in context
+- examining a recent difficult situation with a CBT-style lens
+- turning vague emotional or behavioral confusion into clearer structure
+
 ## Included Skills
 
 ### `hwamony-abc-fa`
+
+[Open skill README](hwamony-abc-fa/README.md)
 
 Descriptive ABC functional analysis for behavior.
 
@@ -18,6 +26,8 @@ Use this when you want to understand why a behavior happens by mapping:
 - the most likely behavioral function
 
 ### `hwamony-cbt-chats`
+
+[Open skill README](hwamony-cbt-chats/README.md)
 
 Structured CBT-style support conversations.
 
@@ -51,6 +61,11 @@ Use this when you want help with:
 - legal advice
 
 If a conversation involves immediate danger, self-harm, abuse, violence, or acute medical risk, use professional or emergency support instead of relying on these skills.
+
+## Quick Prompts
+
+- `Use $hwamony-abc-fa to help me understand why this behavior keeps happening around homework time.`
+- `Use $hwamony-cbt-chats to walk me through a recent situation, the automatic thought I had, and a more balanced reframe.`
 
 ## License Note
 

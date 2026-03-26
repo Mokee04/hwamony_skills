@@ -1,12 +1,22 @@
 # Agent Builder Skills
 
-This folder contains skills for designing, implementing, evaluating, and supporting agent or prompt-driven systems.
+Skills for turning a fuzzy AI idea into a designed system, a working implementation, and a more publishable asset.
 
-These skills are useful when the task goes beyond a single prompt and starts to involve architecture, artifacts, tooling, iteration loops, or reusable workflows.
+This category is strongest when the work stops being “just write me a prompt” and turns into architecture, routing, tooling, evaluation, or reusable system design.
+
+## Best Starting Points
+
+- building a new agent or assistant from requirements
+- deciding whether a task should stay single-prompt or become a workflow
+- implementing provider-aware runtime code after the architecture is chosen
+- evaluating whether a built system is actually getting better
+- packaging a good internal skill so other people can understand and reuse it
 
 ## Included Skills
 
 ### `hwamony-agent-system-builder`
+
+[Open skill README](hwamony-agent-system-builder/README.md)
 
 Designs an AI agent or single-model system from requirements through decision-making.
 
@@ -20,6 +30,8 @@ Use this when you want to:
 
 ### `hwamony-agent-system-implementer`
 
+[Open skill README](hwamony-agent-system-implementer/README.md)
+
 Implements the selected system architecture.
 
 Use this when you want help creating:
@@ -31,6 +43,8 @@ Use this when you want help creating:
 - provider-aware implementation structure
 
 ### `hwamony-agent-system-evaluator`
+
+[Open skill README](hwamony-agent-system-evaluator/README.md)
 
 Evaluates and iterates on a built system.
 
@@ -44,7 +58,9 @@ Use this when you want:
 
 ### `hwamony-prompt-architect`
 
-A meta skill for designing and refining prompt systems.
+[Open skill README](hwamony-prompt-architect/README.md)
+
+Designs prompts as reusable systems with routing, schemas, tools, and production constraints.
 
 Use this when you need:
 
@@ -56,6 +72,8 @@ Use this when you need:
 
 ### `hwamony-search-skills`
 
+[Open skill README](hwamony-search-skills/README.md)
+
 Searches GitHub for relevant agent skills and helps install the best match.
 
 Use this when you want to:
@@ -65,12 +83,27 @@ Use this when you want to:
 - find a skill for a specific framework or workflow
 - install a promising skill from GitHub
 
+### `hwamony-skill-showcase`
+
+[Open skill README](hwamony-skill-showcase/README.md)
+
+Transforms internal skills into public-facing showcases with clearer docs, sharper examples, and launch-ready copy.
+
+Use this when you want to:
+
+- rewrite a README for humans instead of internal use only
+- clarify who the skill is for and when to use it
+- generate example prompts and demo ideas
+- prepare GitHub descriptions, topics, or launch copy
+- turn a private-looking skill into a showcase-ready open source asset
+
 ## What This Category Is Good At
 
 - turning fuzzy AI ideas into structured projects
 - reducing architecture guesswork
 - building reusable systems instead of one-off experiments
 - connecting design, implementation, and evaluation into one loop
+- helping strong internal skills look legible and valuable from the outside
 
 ## Good Fit
 
@@ -88,7 +121,15 @@ If you are new to this folder, a simple path is:
 2. move to `hwamony-agent-system-implementer`
 3. use `hwamony-agent-system-evaluator` after implementation exists
 
-Use `hwamony-prompt-architect` whenever prompt design becomes central, and `hwamony-search-skills` when you want to extend your toolkit with external skills.
+Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-search-skills` when you want to extend your toolkit with external skills, and `hwamony-skill-showcase` when the work shifts from building the skill to publishing it well.
+
+## Quick Prompts
+
+- `Use $hwamony-agent-system-builder to compare 3 architectures for this support copilot and tell me which one is easiest to ship first.`
+- `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
+- `Use $hwamony-agent-system-implementer to scaffold the selected architecture in Python.`
+- `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
+- `Use $hwamony-skill-showcase to rewrite this internal skill so other builders instantly understand when to use it.`
 
 ## License Note
 
