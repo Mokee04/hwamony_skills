@@ -23,6 +23,7 @@ Default principles:
 - define concepts before proposing solutions
 - keep hidden-problem diagnosis light but useful
 - visualize the concept space before narrowing it
+- persist mind maps, cross-links, and combination artifacts inside the active project folder when the work is project-based
 - prefer combinations across distant branches, not only nearby siblings
 - interpret combinations into ideas instead of dumping raw mixes
 - use user feedback to redraw the map, not only to reword the answer
@@ -63,6 +64,28 @@ Also identify the requested output scope early:
 - `critique existing options`
 
 Honor the user's requested scope. Do not force full convergence when the user asked for range. Do not restart from zero when the user asked to critique an existing set.
+
+## Project Logging
+
+When the work belongs to a named project, workspace, or deliverable, create or reuse a project-local log directory before the main loop:
+
+- `<project_folder>/creative_thinking_log/`
+
+Use this folder to preserve the thinking trail, especially:
+
+- mind map source files
+- rendered mind maps
+- cross-links or connection findings across branches
+- distant-concept combination inputs and outputs
+- shortlist snapshots or iteration notes when the loop meaningfully changes
+
+Default logging rules:
+
+- prefer project-local paths over `/tmp` for any artifact worth revisiting
+- use clear filenames such as `mindmap-input.txt`, `mindmap.svg`, `cross-links.md`, `combination-axes.txt`, `combinations.md`, or `iteration-01-shortlist.md`
+- if the loop repeats, either append to an existing log file or create iteration-numbered files
+- mention the saved paths in the response when files were created or updated
+- if no project folder exists yet, create one only when the task context makes a project directory appropriate; otherwise keep lightweight scratch work temporary
 
 ## Main Loop
 
@@ -148,12 +171,14 @@ Preferred use:
 
 - create a small outline or JSON input
 - render to SVG or PNG
+- save both the source outline and the rendered artifact inside `creative_thinking_log/` when the task is project-based
 - mention the output path in the response when you generated it
 
 Example command:
 
 ```bash
-python3 scripts/render_mindmap.py /tmp/creative-map.txt -o /tmp/creative-map.svg
+mkdir -p "$PROJECT_DIR/creative_thinking_log"
+python3 scripts/render_mindmap.py "$PROJECT_DIR/creative_thinking_log/mindmap-input.txt" -o "$PROJECT_DIR/creative_thinking_log/mindmap.svg"
 ```
 
 Mind map rules:
@@ -163,6 +188,7 @@ Mind map rules:
 - separate clearly different concept families
 - add cross-links only when they reveal a useful bridge
 - do not overfill the map just to look comprehensive
+- record useful cross-links in a companion file such as `creative_thinking_log/cross-links.md` when those relationships influence later combinations
 
 ### 3. Combine Distant Concepts
 
@@ -188,7 +214,7 @@ Files:
 Example command:
 
 ```bash
-python3 scripts/combine_options.py /tmp/creative-axes.txt --size 2 -o /tmp/creative-combos.md
+python3 scripts/combine_options.py "$PROJECT_DIR/creative_thinking_log/combination-axes.txt" --size 2 -o "$PROJECT_DIR/creative_thinking_log/combinations.md"
 ```
 
 Interpret combinations into task-relevant ideas.
@@ -216,6 +242,7 @@ Default targets:
 - turn the best 3-5 into candidate ideas
 - keep at least 2 non-obvious combinations in the final set
 - keep at least 1 contrarian or surprising lane in the candidate set unless the user explicitly asks for only safe options
+- preserve the strongest combination rationale in `creative_thinking_log/` when operating inside a project folder
 
 If the user requested a specific final count, shape the candidate set to that count.
 
@@ -271,6 +298,7 @@ When the user gives feedback:
 - redraw the mind map if the structure changed
 - rerun distant-concept combinations
 - present the new candidate set and explain what changed
+- update the relevant files in `creative_thinking_log/` so the project keeps an iteration trail
 
 Typical feedback moves:
 
@@ -362,10 +390,11 @@ When invoked, follow this pattern:
 4. Start from the user's existing options when they supplied them.
 5. Show the mind map structure in a compact form.
 6. Render the mind map with Python when it materially helps, and by default when the user explicitly asked for Python-based visualization.
-7. Combine distant concepts into candidate ideas.
-8. Preserve at least one contrarian or weird-but-viable lane before narrowing.
-9. Honor explicit quantity requests in the final candidate set or shortlist.
-10. Ask for targeted feedback only after the first loop is complete, unless the task is blocked by missing essentials.
+7. Save or update project-local artifacts in `creative_thinking_log/` when the task is project-based.
+8. Combine distant concepts into candidate ideas.
+9. Preserve at least one contrarian or weird-but-viable lane before narrowing.
+10. Honor explicit quantity requests in the final candidate set or shortlist.
+11. Ask for targeted feedback only after the first loop is complete, unless the task is blocked by missing essentials.
 
 ## Default Output Shape
 
@@ -383,6 +412,11 @@ If a visual file was generated, include:
 
 - the render path
 - one line on what the map reveals
+
+If project logs were updated, also include:
+
+- the `creative_thinking_log/` path
+- which file captures the key cross-links or connection findings
 
 ## Anti-Patterns
 
