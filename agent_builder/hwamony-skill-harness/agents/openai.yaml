@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Skill Harness"
+  short_description: "Harden skills with fixed eval cases, run history, and repeatable improvement loops"
+  default_prompt: "Use $hwamony-skill-harness to evaluate this skill, create a stable eval workspace with fixed cases, record the failures, and improve it through a repeatable patch loop."

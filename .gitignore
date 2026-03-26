@@ -212,3 +212,6 @@ agent_builder/hwamony-skill-showcase/log/
 
 # Local autoresearch workspaces
 **/autoresearch-*/
+
+# Local skill-harness optimization artifacts
+**/eval/

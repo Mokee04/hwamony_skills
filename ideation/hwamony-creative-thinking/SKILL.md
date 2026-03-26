@@ -27,11 +27,13 @@ Default principles:
 
 - do not accept the surface ask as the whole problem
 - diagnose before optimizing
+- diagnose proportionally, not theatrically
 - generate before judging
 - compare before selecting
 - combine before discarding
 - name patterns, not just items
 - end with candidates, not only analysis
+- honor the user's explicit scope when they want only expansion, only narrowing, or critique of existing options
 
 ## Best Fits
 
@@ -62,7 +64,9 @@ Then choose the right emphasis:
 - more diagnosis when the user describes a problem, symptom, friction, or topic that may hide a deeper issue
 - more divergence when the space is underexplored
 - more convergence when options already exist
+- more comparison and critique when the user already has candidates, drafts, or directions on the table
 - a balanced loop when the user wants both "many ideas" and "the strongest ones"
+- a lighter diagnosis when the brief is already concrete and the main need is range or structured comparison
 
 ## Hidden Problem Layer
 
@@ -92,6 +96,14 @@ Useful hidden-problem lenses:
 
 If the prompt is ambiguous, surface 2-3 plausible underlying problem hypotheses instead of pretending there is only one.
 
+Treat hidden-problem analysis as a working hypothesis, not a reveal.
+
+- label deeper interpretations as likely or plausible when inferred
+- keep diagnosis brief when the prompt is already concrete
+- do not invent psychological motives or false certainty from sparse evidence
+- if the user already gave a strong candidate set, diagnose only enough to compare the set intelligently
+- if the user explicitly asks for only idea expansion or only narrowing, keep the diagnosis layer compact and supportive rather than dominant
+
 ## Workflow
 
 ### 1. Define the Creative Frame
@@ -104,6 +116,7 @@ Extract:
 - constraints
 - tone or style
 - evaluation criteria, if any
+- requested quantity, shortlist size, or output count, if any
 
 If criteria are missing, infer provisional ones from the task. For example:
 
@@ -113,6 +126,17 @@ If criteria are missing, infer provisional ones from the task. For example:
   memorability, fit, distinctiveness, tone, extensibility
 - positioning:
   clarity, resonance, differentiation, strategic tension
+
+If the user requests a specific number of candidates, angles, or finalists, honor that count when it is reasonable. If you intentionally deviate, explain why instead of silently drifting.
+
+Also identify the requested output scope early:
+
+- `diagnose + expand + narrow`
+- `expand only`
+- `narrow only`
+- `critique existing options`
+
+If the user already supplied options, drafts, or names, treat those as first-class input rather than resetting the exercise from zero.
 
 ### 2. Discover the Hidden Problem
 
@@ -214,6 +238,12 @@ For problem-oriented tasks, add one short line per unit:
 - `addresses:` which hidden issue, tension, or leverage point this unit responds to
 
 Remove duplicates with only wording differences.
+
+If the user already supplied candidate units:
+
+- clean and normalize those first
+- cluster and critique them before generating replacements
+- introduce new candidates only when the current set has clear gaps, repetition, or strategic blind spots
 
 ### 5. Cluster and Compare
 
@@ -434,6 +464,9 @@ Do not:
 - preserve near-duplicates as fake variety
 - give solutions that are not traceable to the diagnosed issue
 - force one deep root cause when multiple tensions matter
+- over-interpret a sparse brief just to sound insightful
+- ignore user-supplied candidates and restart from zero without reason
+- hide behind framework language when the user needs concrete options
 - end with generic observations instead of actionable signal
 
 ## Response Pattern
@@ -442,12 +475,43 @@ When invoked, follow this pattern:
 
 1. Restate the creative brief in one line.
 2. Name the task mode.
-3. State the surface ask and the likely hidden problem or tension.
+3. State the surface ask and the likely hidden problem or tension, labeling inferences as hypotheses when needed.
 4. Show the diagnosis or divergence output in a compact structure.
-5. Normalize into candidate units, families, or solution directions.
-6. Show the convergent comparison, combinations, or shortlist.
+5. Normalize into candidate units, families, or solution directions, starting with user-supplied options when they exist.
+6. Show the convergent comparison, combinations, critique, or shortlist.
 7. State the main insights explicitly.
 8. End with the strongest candidate or lane, the tradeoff, and the next validation move.
+
+## Default Output Shapes
+
+Use the lightest shape that still fits the brief.
+
+### Diagnose + Expand + Narrow
+
+- brief
+- task mode
+- hidden problem hypotheses
+- idea families or candidate directions
+- shortlist
+- recommendation and next move
+
+### Critique Existing Options
+
+- brief
+- task mode
+- what criteria matter most
+- clustered critique of the existing options
+- shortlist or ranked set
+- only then, optional replacement ideas if the current set is weak
+
+### Expand Only
+
+- brief
+- task mode
+- concise diagnosis
+- idea families
+- raw candidates
+- short note on which lanes look strongest if the user wants narrowing next
 
 ## Example Triggers
 

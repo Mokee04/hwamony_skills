@@ -19,6 +19,7 @@ If you only try a few first, start with the flagship skills below.
 - turn a broad question into staged desk research with saved sources
 - turn a vague problem into a shortlist of stronger solution directions
 - turn a service brief into market-aware names and launch copy
+- turn a promising but messy skill into fixed eval cases, run history, and evidence-backed improvements
 - turn a good internal skill into a public-facing README and launch-ready showcase
 
 ## 🚀 Start Here
@@ -29,6 +30,8 @@ If you only try a few first, start with the flagship skills below.
   Turn one-shot searching into staged desk research with saved sources and reusable artifacts.
 - [`hwamony-creative-thinking`](ideation/hwamony-creative-thinking/README.md)
   Diagnose the hidden problem, widen the space, then narrow to strong candidates.
+- [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
+  Turn a promising skill into a repeatable eval loop with fixed cases, evidence, and patch history.
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
   Turn an internal skill into a public-facing README, examples, and launch-ready GitHub copy.
 
@@ -45,6 +48,7 @@ If you only try a few first, start with the flagship skills below.
 - If your prompt keeps breaking when the task gets real: start with [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
 - If your research questions are broad and you need saved evidence: start with [`hwamony-desk-research`](research/hwamony-desk-research/README.md)
 - If the team is brainstorming the wrong thing: start with [`hwamony-creative-thinking`](ideation/hwamony-creative-thinking/README.md)
+- If your skill is promising but you still cannot prove it is improving: start with [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
 - If you need a name and launch copy that still fits the live market: start with [`hwamony-service-naming-copy`](ideation/hwamony-service-naming-copy/README.md)
 - If your skill works but still looks private or unclear: start with [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
 - If you are building an agent from scratch: start with [`hwamony-agent-system-builder`](agent_builder/hwamony-agent-system-builder/README.md)
@@ -54,6 +58,7 @@ If you only try a few first, start with the flagship skills below.
 - `Use $hwamony-prompt-architect to turn this messy system prompt into a production-ready prompt spec with schema, tool rules, and model guidance.`
 - `Use $hwamony-desk-research to turn this vague market question into a scoped research folder with preserved sources and a final memo.`
 - `Use $hwamony-creative-thinking to find the real product problem before we brainstorm features.`
+- `Use $hwamony-skill-harness to turn this messy skill into fixed eval cases, run evidence, and a patch loop we can rerun after every edit.`
 - `Use $hwamony-service-naming-copy to turn this service brief into strong naming lanes, shortlist candidates, and launch-ready copy.`
 - `Use $hwamony-skill-showcase to rewrite this internal-only skill so strangers on GitHub immediately understand why it is worth a star.`
 
@@ -81,6 +86,7 @@ If you only try a few first, start with the flagship skills below.
 - [`hwamony-agent-system-implementer`](agent_builder/hwamony-agent-system-implementer/README.md)
 - [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
 - [`hwamony-search-skills`](agent_builder/hwamony-search-skills/README.md)
+- [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
 
 ## 📝 Repo Notes
