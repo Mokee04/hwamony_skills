@@ -197,9 +197,10 @@ def render_text(results: list[dict]) -> str:
         lines.append(f"   why: {item['match_reason']}")
         lines.append(f"   about: {description}")
         lines.append(
-            "   install: "
-            f"python3 scripts/install_github_skill.py --repo {item['repo']} --path {item['path']}"
+            "   install (pinned): "
+            f"python3 scripts/install_github_skill.py --repo {item['repo']} --path {item['path']} --ref <commit-sha-or-tag>"
         )
+        lines.append("   note: review the repo and pin the ref before installing. Use --allow-unpinned only for a deliberate quick try.")
         lines.append(f"   url: {item['url']}")
     return "\n".join(lines)
 

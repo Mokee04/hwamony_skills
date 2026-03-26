@@ -19,7 +19,7 @@ Choose the shortest path that satisfies the request:
 
 1. If the user gives a GitHub tree URL, repo URL, or explicit `owner/repo` plus skill path, skip search and go straight to install.
 2. If the user asks to browse, compare, or find a skill from intent, search first.
-3. If the user says "find and install" and there is one clearly best candidate, recommend it briefly and install it in the same turn. Only stop to ask when the top results are genuinely ambiguous or a required install detail is missing.
+3. If the user says "find and install" and there is one clearly best candidate, recommend it briefly and install it in the same turn only when the install target is pinned to a commit SHA or reviewed tag. If the install would rely on a mutable branch, pause to confirm or use the install wrapper's explicit `--allow-unpinned` escape hatch.
 4. After any successful installation, remind the user to restart Codex so the new skill is discovered.
 
 ## Workflow
@@ -59,6 +59,8 @@ Examples:
 
 The script searches public GitHub repositories, looks for real `SKILL.md` files, and ranks results by keyword match plus repository popularity. It works best with focused 2-5 word queries.
 
+Treat search results as candidates, not trusted code. Show the repo and path first, then prefer a pinned install command that uses a commit SHA or reviewed release tag.
+
 Because the script uses the GitHub API, request escalation when sandbox network limits block it. If a search command fails for likely sandbox/network reasons, rerun the same command with escalation instead of stopping at the first failure.
 
 If the local Python SSL store is missing GitHub certificates, retry with `uv run --with certifi python scripts/search_github_skills.py "<query>"`.
@@ -84,12 +86,14 @@ Use the install wrapper when the user has selected a result or already gave a re
 
 Examples:
 
-- `python3 scripts/install_github_skill.py --repo vercel-labs/agent-skills --path skills/frontend-design`
-- `python3 scripts/install_github_skill.py --url https://github.com/vercel-labs/agent-skills/tree/main/skills/frontend-design`
+- `python3 scripts/install_github_skill.py --repo vercel-labs/agent-skills --path skills/frontend-design --ref 4b3c2a1`
+- `python3 scripts/install_github_skill.py --url https://github.com/vercel-labs/agent-skills/tree/main/skills/frontend-design --ref refs/tags/v1.2.0`
 
 The wrapper delegates to the global GitHub installer if it exists under `${CODEX_HOME:-~/.codex}/skills/.system/skill-installer/scripts/install-skill-from-github.py`.
 
 Pass through any extra installer options the user needs, such as `--ref`, `--name`, `--dest`, or `--method`.
+
+By default, the wrapper refuses unpinned installs from mutable refs such as `main`. If the user explicitly wants a quick trial after review, the escape hatch is `--allow-unpinned`.
 
 If HTTPS download fails because of local TLS issues, retry the installer with `--method git`.
 
@@ -104,13 +108,13 @@ Keep the recommendation list brief and actionable. For each candidate, include:
 - stars
 - updated date
 - one-line fit summary
-- install command when the user is ready
+- pinned install command when the user is ready
 
 When the request is search-only, end with the strongest next action.
 
 - If one candidate clearly stands out, say so.
 - If two candidates are close, name the tradeoff in one sentence.
-- If the user asked to install and the winner is clear, install it instead of making the user repeat the repo/path manually.
+- If the user asked to install and the winner is clear, install it when you have a pinned ref or explicit approval for an unpinned quick try.
 
 When the request is install-only, keep the answer shorter:
 
