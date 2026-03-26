@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Creative Thinking"
-  short_description: "Diagnose hidden problems, explore options, converge on a shortlist."
-  default_prompt: "Use $hwamony-creative-thinking to look past our request for \"more features,\" figure out why new users stall after the first session, explore several solution paths, and narrow them to 3 product experiments worth testing."
+  short_description: "Define core concepts, map them visually, combine distant ideas, and iterate."
+  default_prompt: "Use $hwamony-creative-thinking to define the core concepts behind our brief, turn them into a mind map, combine distant branches into fresh ideas, and refine the next round based on feedback."

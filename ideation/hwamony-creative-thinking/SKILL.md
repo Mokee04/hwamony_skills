@@ -7,33 +7,28 @@ description: Generate, expand, combine, and narrow possibilities to surface stro
 
 ## Overview
 
-Use this skill when the job is not only to think broadly, but to end with something strong: a shortlist, a naming direction, a concept family, a recommended solution path, or a few high-potential combinations.
+Use this skill when the user wants a creative task explored through a repeatable loop:
 
-The skill intentionally moves through both divergence and convergence, but it also includes a diagnosis layer: before treating the user's topic as the real problem, inspect what deeper tension, hidden job, structural constraint, or decision driver may sit underneath it.
+1. define the task's core concepts
+2. build a mind map from those concepts
+3. combine distant concepts to generate stronger ideas
+4. repeat the loop based on user feedback
 
-The aim is not just "many ideas." The aim is to uncover what really needs solving, then surface the strongest candidates that fit that deeper structure.
+The point is not just to brainstorm. The point is to turn a vague or broad request into a visible concept structure, then use that structure to produce better combinations and better candidate ideas.
 
 ## Core Stance
 
-Think in three motions:
-
-- diagnose first
-- widen second
-- reduce third
-
-Do not treat those as rigid phases. The point is to inspect the problem beneath the prompt, explore enough to see the landscape, then converge enough to surface signal.
-
 Default principles:
 
-- do not accept the surface ask as the whole problem
-- diagnose before optimizing
-- diagnose proportionally, not theatrically
-- generate before judging
-- compare before selecting
-- combine before discarding
-- name patterns, not just items
-- end with candidates, not only analysis
-- honor the user's explicit scope when they want only expansion, only narrowing, or critique of existing options
+- define concepts before proposing solutions
+- keep hidden-problem diagnosis light but useful
+- visualize the concept space before narrowing it
+- prefer combinations across distant branches, not only nearby siblings
+- interpret combinations into ideas instead of dumping raw mixes
+- use user feedback to redraw the map, not only to reword the answer
+- keep the loop tight, concrete, and easy to continue
+- verify current product, pricing, or tool-capability facts before building recommendations when the task depends on real-world vendors
+- preserve at least one contrarian or surprising lane that is unusual but still viable
 
 ## Best Fits
 
@@ -41,12 +36,11 @@ This skill is especially strong for:
 
 - problem solving
 - service naming
-- brand or product naming
 - product concept generation
 - positioning and messaging directions
-- feature or solution ideation
+- feature ideation
 - campaign or content directions
-- strategic option narrowing
+- open-ended exploration where structure is needed
 
 ## Choose the Task Mode
 
@@ -59,465 +53,358 @@ Identify the task type quickly:
 - `feature-ideation`
 - `open exploration`
 
-Then choose the right emphasis:
-
-- more diagnosis when the user describes a problem, symptom, friction, or topic that may hide a deeper issue
-- more divergence when the space is underexplored
-- more convergence when options already exist
-- more comparison and critique when the user already has candidates, drafts, or directions on the table
-- a balanced loop when the user wants both "many ideas" and "the strongest ones"
-- a lighter diagnosis when the brief is already concrete and the main need is range or structured comparison
-
-## Hidden Problem Layer
-
-When the user gives a theme, request, or symptom, do not jump straight to ideas.
-
-First inspect the structure under it:
-
-- what the user says they want
-- what progress they likely actually want
-- what symptom they are pointing at
-- what deeper problem may produce that symptom
-- what tension or tradeoff is keeping the problem alive
-- what constraint, incentive, fear, or decision criterion is probably shaping the situation
-
-Useful hidden-problem lenses:
-
-- capability gap
-- workflow friction
-- incentive mismatch
-- trust barrier
-- decision overload
-- timing mismatch
-- behavior loop failure
-- status or identity pressure
-- coordination cost
-- structural bottleneck
-
-If the prompt is ambiguous, surface 2-3 plausible underlying problem hypotheses instead of pretending there is only one.
-
-Treat hidden-problem analysis as a working hypothesis, not a reveal.
-
-- label deeper interpretations as likely or plausible when inferred
-- keep diagnosis brief when the prompt is already concrete
-- do not invent psychological motives or false certainty from sparse evidence
-- if the user already gave a strong candidate set, diagnose only enough to compare the set intelligently
-- if the user explicitly asks for only idea expansion or only narrowing, keep the diagnosis layer compact and supportive rather than dominant
-
-## Workflow
-
-### 1. Define the Creative Frame
-
-Extract:
-
-- the topic or problem
-- target audience
-- desired outcome
-- constraints
-- tone or style
-- evaluation criteria, if any
-- requested quantity, shortlist size, or output count, if any
-
-If criteria are missing, infer provisional ones from the task. For example:
-
-- problem solving:
-  usefulness, feasibility, distinctiveness, leverage, testability
-- service naming:
-  memorability, fit, distinctiveness, tone, extensibility
-- positioning:
-  clarity, resonance, differentiation, strategic tension
-
-If the user requests a specific number of candidates, angles, or finalists, honor that count when it is reasonable. If you intentionally deviate, explain why instead of silently drifting.
+Use the mode only to tune the concepts and evaluation criteria. Do not let the mode replace the main loop.
 
 Also identify the requested output scope early:
 
-- `diagnose + expand + narrow`
+- `diagnose + map + combine + narrow`
 - `expand only`
 - `narrow only`
 - `critique existing options`
 
-If the user already supplied options, drafts, or names, treat those as first-class input rather than resetting the exercise from zero.
+Honor the user's requested scope. Do not force full convergence when the user asked for range. Do not restart from zero when the user asked to critique an existing set.
 
-### 2. Discover the Hidden Problem
+## Main Loop
 
-Separate the surface request from the deeper issue.
+### 1. Define the Core Concepts
 
-At minimum, identify:
+Start by translating the request into a compact creative frame.
 
-- the surface ask
-- the likely underlying problem or latent job
-- 2-4 hidden factors behind it
-- the leverage points that would most change the outcome
+Extract:
 
-Good hidden factors include:
+- the task or problem
+- target audience
+- desired outcome
+- constraints
+- tone or style
+- evaluation criteria
+- requested quantity, shortlist size, or output count, if any
 
-- root cause
-- stakeholder tension
-- structural constraint
-- hidden motivation
-- decision criterion
-- incentive mismatch
-- trust or credibility barrier
-- fear of loss
+If the user gave an explicit number such as 4 ideas, 12 angles, or 3 finalists, treat that as a real constraint unless there is a clear reason not to. If you intentionally deviate, explain why instead of drifting silently.
 
-For non-problem tasks, translate this step into diagnosis rather than therapy.
+Then define the core concepts that make the task interesting or solvable.
 
-Examples:
+Good concept sources:
 
-- service naming:
-  hidden buyer anxiety, trust barrier, selection heuristic, category expectation
-- product concept:
-  job-to-be-done, unmet tension, adoption barrier, emotional payoff
-- positioning:
-  stated claim, real decision driver, skeptical objection, strategic contrast
+- goals
+- user motivations
+- tensions or tradeoffs
+- contexts of use
+- emotional payoffs
+- mechanisms
+- constraints
+- adjacent domains
+- metaphors
+- category expectations
 
-Useful output forms:
+Useful default target:
 
-- surface ask vs underlying problem
-- issue tree
-- tension map
-- hidden-driver list
-- leverage-point list
+- 5-12 core concepts
+- grouped into 3-6 families
 
-### 3. Run the Divergence Pass
+For each concept, keep one short explanation:
 
-Expand the space before choosing.
+- `concept:` the label
+- `role:` why this concept matters for the task
 
-Good divergence outputs:
+If the prompt suggests a deeper tension, state it briefly as a hypothesis rather than a grand reveal.
 
-- mind map
-- branch table
-- candidate list
-- angle list
-- semantic network
-- intervention menu
-- problem-frame variants
+If the brief is ambiguous, especially in problem-solving mode, surface 2-3 plausible hidden-driver or root-cause hypotheses instead of pretending there is only one.
 
-Use these moves:
+Helpful structure:
 
-- change the lens
-- change the audience
-- change the context
-- change the emotional payoff
-- move to an adjacent domain
-- invert the assumption
-- combine opposites
-- solve the deeper problem instead of the stated symptom
+- `surface ask`
+- `likely tension or hidden driver`
+- `core concept families`
+- `core concepts`
 
-Default targets:
+If the user already supplied options, names, or draft directions:
 
-- 5-8 idea families
-- 10-25 raw candidates when naming or ideating
-- at least 2 non-obvious directions
-- at least 2 different problem frames when the brief is ambiguous
+- normalize those first
+- critique or cluster them before proposing replacements
+- add new options only when the current set has a clear gap, repetition problem, or strategic weakness
 
-If a visual structure helps, use:
+### 2. Build the Mind Map
+
+Turn the concepts into a mind map before you start selecting ideas.
+
+Mind map structure:
+
+- center node: the task, challenge, or opportunity
+- first-level branches: concept families
+- second-level nodes: individual concepts
+- optional cross-links: non-obvious relationships across branches
+
+Use the bundled Python visualizer when a visual artifact would help the work.
+
+If the user explicitly asks for a Python-based mind map, visual map, or rendered concept map, use the script by default instead of only describing the structure in prose.
+
+Files:
 
 - `scripts/render_mindmap.py`
 - `references/visualization-format.md`
 
-### 4. Normalize into Candidate Units
+Preferred use:
 
-Before converging, rewrite the divergence output into comparable units.
+- create a small outline or JSON input
+- render to SVG or PNG
+- mention the output path in the response when you generated it
 
-Examples:
+Example command:
 
-- service naming:
-  candidate names
-- problem solving:
-  solution concepts
-- positioning:
-  direction statements
-- product concepts:
-  concept bundles
+```bash
+python3 scripts/render_mindmap.py /tmp/creative-map.txt -o /tmp/creative-map.svg
+```
 
-Each unit should be short, legible, and tied to what problem it addresses.
+Mind map rules:
 
-For problem-oriented tasks, add one short line per unit:
+- keep labels short
+- branch by meaning, not by sentence fragments
+- separate clearly different concept families
+- add cross-links only when they reveal a useful bridge
+- do not overfill the map just to look comprehensive
 
-- `addresses:` which hidden issue, tension, or leverage point this unit responds to
+### 3. Combine Distant Concepts
 
-Remove duplicates with only wording differences.
+After the map exists, intentionally look for concepts that sit far apart.
 
-If the user already supplied candidate units:
+Prefer combinations between:
 
-- clean and normalize those first
-- cluster and critique them before generating replacements
-- introduce new candidates only when the current set has clear gaps, repetition, or strategic blind spots
+- different top-level branches
+- weakly linked concept families
+- emotional and functional concepts
+- constraints and aspirations
+- category norms and unusual adjacent ideas
 
-### 5. Cluster and Compare
+Avoid spending most of the time on combinations that are already obvious neighbors.
 
-Group candidates into families:
+When helpful, convert distant branches into axes and use the bundled combination script.
 
-- by theme
-- by mechanism
-- by value proposition
-- by emotional tone
-- by strategic posture
-- by hidden problem addressed
-
-Then compare within and across families.
-
-Useful outputs:
-
-- theme clusters
-- tradeoff table
-- family comparison
-- tension map
-- leverage vs effort matrix
-
-### 6. Run the Combination Pass
-
-If insight comes from mixing elements, rewrite the set into axes and combine them.
-
-Good axes:
-
-- audience
-- value
-- tone
-- channel
-- feature
-- context
-- emotion
-- form
-- hidden problem
-- intervention mechanism
-
-Use:
+Files:
 
 - `scripts/combine_options.py`
 - `references/combination-format.md`
 
-Prefer 2-way combinations first. Move to 3-way combinations only when the axes are clean and meaningful.
+Example command:
 
-Look for:
+```bash
+python3 scripts/combine_options.py /tmp/creative-axes.txt --size 2 -o /tmp/creative-combos.md
+```
 
-- reinforcement
-- contradiction
-- adjacency
-- asymmetry
-- hidden fit
+Interpret combinations into task-relevant ideas.
 
-### 7. Design Solution Paths
+For each promising combination, rewrite it as:
 
-Before final narrowing, check that promising directions actually respond to the diagnosis.
+- `idea:` what the combined direction is
+- `from:` which distant concepts or branches were combined
+- `fit:` why it matches the task
+- `risk:` what remains weak, unclear, or hard
 
-For each strong candidate or lane, state:
+Do not let all combinations collapse into the same strategic answer.
 
-- what it is
-- which hidden problem it addresses
-- why that makes it promising
-- what tradeoff or risk remains
+Before narrowing, make sure the set includes different creative postures such as:
 
-When the task is problem solving, include a mix of:
+- conservative
+- operational
+- contrarian
+- weird but viable
+- system-design heavy
 
-- low-effort fixes
-- structural fixes
-- behavioral fixes
-- system or policy fixes
-- fast learnable experiments
+Default targets:
 
-Prefer recommendations that solve a more valuable problem, not only the most visible symptom.
+- generate 6-12 raw combinations
+- turn the best 3-5 into candidate ideas
+- keep at least 2 non-obvious combinations in the final set
+- keep at least 1 contrarian or surprising lane in the candidate set unless the user explicitly asks for only safe options
 
-### 8. Converge into a Shortlist
+If the user requested a specific final count, shape the candidate set to that count.
 
-After grouping and combining, explicitly surface the strongest candidates.
+### 4. Converge into Candidate Ideas
 
-Recommended shortlist sizes:
+Do not stop at the map or the combinations. Turn them into candidate units that the user can react to.
 
-- 3-5 for names
-- 2-4 for solution directions
-- 3-6 for concept bundles
+Examples:
+
+- service naming: name directions or candidate names
+- problem solving: solution concepts
+- product concept: concept bundles
+- positioning: message territories or direction statements
+
+Shortlist using the task's criteria, usually some mix of:
+
+- usefulness
+- distinctiveness
+- coherence
+- feasibility
+- memorability
+- leverage
+- testability
+
+Scope rules:
+
+- `expand only`: keep diagnosis brief, show breadth, and avoid premature narrowing
+- `narrow only`: work mainly from the supplied set or already generated set
+- `critique existing options`: evaluate the current options first and only then add limited replacements if needed
+- `diagnose + map + combine + narrow`: run the full loop
+
+Before final recommendation, compare the shortlist across at least 2 different creative postures. Do not make every finalist a variation of the same safe answer.
 
 For each shortlisted item, state:
 
 - what it is
-- what hidden problem it addresses
+- which concepts it combines
 - why it stands out
-- what makes it different
-- what risk or tradeoff remains
+- what tradeoff remains
 
-### 9. Extract Insight and Recommendation
+For at least one shortlisted item, explicitly label:
 
-Do not stop at "here are the options." Say what the set reveals.
+- `lane:` contrarian, weird-but-viable, or unexpected
 
-Strong synthesis forms:
+### 5. Repeat with User Feedback
 
-- "The surface request looks like a speed problem, but the deeper issue is coordination cost."
-- "Most strong candidates cluster around reassurance rather than authority."
-- "The real divide is playful naming vs credible naming."
-- "Several combinations converge on low-friction behavior plus status signaling."
-- "The highest-potential direction is not the most novel, but the one that resolves the hidden trust barrier."
+Treat feedback as a signal to redraw the concept system, not only to regenerate wording.
 
-End with:
+When the user gives feedback:
 
-- a recommended winner or top lane
-- the main reason it wins
-- the main tradeoff
-- the next validation move
+- revise the core concepts
+- add, remove, split, or merge branches
+- redraw the mind map if the structure changed
+- rerun distant-concept combinations
+- present the new candidate set and explain what changed
+
+Typical feedback moves:
+
+- "too generic" -> add sharper concepts or more specific branches
+- "too unrealistic" -> strengthen feasibility and constraint branches
+- "too safe" -> combine more distant branches
+- "not creative enough" -> force a contrarian lane and a weird-but-viable lane before narrowing again
+- "not aligned with the task" -> redefine the center node and criteria
+- "I like this lane" -> deepen that branch and recombine within its neighboring distant branches
 
 ## Task-Specific Guidance
 
 ### Problem Solving
 
-Generate:
+Core concepts often include:
 
-- symptom hypotheses
-- root-cause angles
-- intervention types
-- low-effort fixes
-- systemic fixes
-- unconventional fixes
+- symptoms
+- root causes
+- constraints
+- stakeholder tensions
+- incentives
+- behavior loops
+- structural bottlenecks
 
-Distinguish clearly between:
+Strong distant combinations often mix:
 
-- symptom
-- underlying constraint
-- structural cause
-- behavior cause
-- incentive mismatch
-- coordination failure
-
-Converge toward:
-
-- highest leverage
-- fastest learnable experiments
-- strongest fit to the real constraint
+- structural fixes with emotional barriers
+- workflow friction with trust or motivation
+- low-effort fixes with system-level changes
 
 ### Service Naming
 
-Before generating names, surface:
+Core concepts often include:
 
-- hidden buyer anxiety
-- trust threshold
-- decision heuristic
-- category expectation
-- language tension, if any
+- category expectations
+- buyer anxiety
+- trust signals
+- emotional tone
+- metaphor fields
+- language texture
 
-Generate across naming lanes:
+Strong distant combinations often mix:
 
-- descriptive
-- suggestive
-- metaphorical
-- coined
-- hybrid
-
-Converge toward:
-
-- memorability
-- category fit
-- distinctiveness
-- tone alignment
-- extensibility
+- credibility with surprise
+- category clarity with emotional payoff
+- functional meaning with metaphorical language
 
 ### Product Concept
 
-Before ideating concepts, surface:
+Core concepts often include:
 
 - job-to-be-done
 - behavior barrier
-- adoption friction
-- emotional payoff
+- use context
+- emotional reward
+- delivery mechanism
 - adjacent substitutes
 
-Generate across:
+Strong distant combinations often mix:
 
-- audience
-- core value
-- behavior loop
-- emotional payoff
-- delivery form
-
-Converge toward:
-
-- coherent bundles
-- strong need-solution fit
-- clear difference from adjacent concepts
+- usage context with emotion
+- adoption friction with reward loop
+- category norm with adjacent-domain behavior
 
 ### Positioning
 
-Before writing directions, surface:
+Core concepts often include:
 
-- what the user says they want
-- what they actually need confidence about
-- what objection or doubt blocks adoption
-- what strategic contrast matters most
+- audience doubt
+- real decision driver
+- strategic contrast
+- proof signal
+- promise type
+- tone of voice
 
-Converge toward:
+Strong distant combinations often mix:
 
-- clarity
-- differentiation
-- resonance
-- decision relevance
-- believable promise
-
-## Anti-Patterns
-
-Do not:
-
-- accept the user's stated ask as the whole problem without testing it
-- jump straight to solutions before naming the hidden issue
-- stay only in divergence and forget to shortlist
-- converge so fast that the space never opens
-- dump every combination without interpreting it
-- confuse criteria with candidates
-- preserve near-duplicates as fake variety
-- give solutions that are not traceable to the diagnosed issue
-- force one deep root cause when multiple tensions matter
-- over-interpret a sparse brief just to sound insightful
-- ignore user-supplied candidates and restart from zero without reason
-- hide behind framework language when the user needs concrete options
-- end with generic observations instead of actionable signal
+- decision criteria with emotional reassurance
+- proof with contrast
+- category language with outsider framing
 
 ## Response Pattern
 
 When invoked, follow this pattern:
 
-1. Restate the creative brief in one line.
+1. Restate the brief in one line.
 2. Name the task mode.
-3. State the surface ask and the likely hidden problem or tension, labeling inferences as hypotheses when needed.
-4. Show the diagnosis or divergence output in a compact structure.
-5. Normalize into candidate units, families, or solution directions, starting with user-supplied options when they exist.
-6. Show the convergent comparison, combinations, critique, or shortlist.
-7. State the main insights explicitly.
-8. End with the strongest candidate or lane, the tradeoff, and the next validation move.
+3. Define the core concepts and, if useful, the likely hidden tension.
+4. Start from the user's existing options when they supplied them.
+5. Show the mind map structure in a compact form.
+6. Render the mind map with Python when it materially helps, and by default when the user explicitly asked for Python-based visualization.
+7. Combine distant concepts into candidate ideas.
+8. Preserve at least one contrarian or weird-but-viable lane before narrowing.
+9. Honor explicit quantity requests in the final candidate set or shortlist.
+10. Ask for targeted feedback only after the first loop is complete, unless the task is blocked by missing essentials.
 
-## Default Output Shapes
+## Default Output Shape
 
-Use the lightest shape that still fits the brief.
-
-### Diagnose + Expand + Narrow
+Use the lightest structure that still shows the loop clearly.
 
 - brief
 - task mode
-- hidden problem hypotheses
-- idea families or candidate directions
+- core concepts
+- mind map summary
+- distant-concept combinations
 - shortlist
-- recommendation and next move
+- what to refine in the next loop
 
-### Critique Existing Options
+If a visual file was generated, include:
 
-- brief
-- task mode
-- what criteria matter most
-- clustered critique of the existing options
-- shortlist or ranked set
-- only then, optional replacement ideas if the current set is weak
+- the render path
+- one line on what the map reveals
 
-### Expand Only
+## Anti-Patterns
 
-- brief
-- task mode
-- concise diagnosis
-- idea families
-- raw candidates
-- short note on which lanes look strongest if the user wants narrowing next
+Do not:
+
+- jump straight to ideas without defining concepts
+- keep the concept list so abstract that it cannot shape a map
+- build a mind map and then ignore it
+- combine only nearby or obvious nodes
+- dump raw combinations without interpreting them
+- ignore user-supplied options and restart from zero
+- drift away from an explicit requested count without saying so
+- let all candidate lanes converge into the same practical answer too early
+- remove every surprising lane before the user has a chance to react to it
+- treat the first loop as final when the user gave clear directional feedback
+- preserve a weak center node after feedback changed the task
+- over-diagnose when the brief is already concrete
 
 ## Example Triggers
 
-- "이 문제를 여러 방향으로 풀어보고 유력한 해결책을 골라줘."
-- "표면적으로 보이는 문제 말고, 진짜 해결해야 할 이면의 문제를 찾아서 방향을 제안해줘."
-- "서비스명을 많이 뽑되, 고객의 숨은 불안과 선택 기준을 먼저 드러내고 추려줘."
-- "여러 컨셉을 만들고 조합해서 유망한 방향을 찾아줘."
-- "브레인스토밍부터 shortlist까지 한 번에 해줘."
-- "가능성을 넓힌 뒤 패턴을 보고 가장 좋은 후보를 발굴해줘."
+- "이 과제를 핵심 개념으로 분해하고 마인드맵으로 정리한 뒤 아이디어를 만들어줘."
+- "먼 개념끼리 조합해서 새로운 컨셉을 뽑아줘."
+- "먼저 개념 구조를 잡고, 그걸 바탕으로 서비스 아이디어를 발전시켜줘."
+- "한 번에 끝내지 말고 피드백 반영해서 반복해줘."
+- "브레인스토밍 말고 개념 정의 -> 시각화 -> 조합 순서로 해줘."
