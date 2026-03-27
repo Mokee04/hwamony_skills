@@ -1,51 +1,57 @@
 # Hwamony Skill Lab
 
-Improve another skill through small, auditable iterations instead of vague prompt tweaking.
+Improve a `SKILL.md` through auditable baseline-vs-mutation runs instead of vague prompt tweaking.
 
-`hwamony-skill-lab` wraps a target `SKILL.md` in an autoresearch-style experiment loop: a supervisor proposes one bounded mutation, naive workers execute the baseline and mutated skill on separate test shards, evaluator agents compare the paired outputs with a rubric, and the mutation is promoted only if a majority says it genuinely improved over baseline.
+`hwamony-skill-lab` helps skill authors tighten a promising but inconsistent skill with a repeatable experiment loop: a supervisor drafts one bounded mutation, the human reviews the plan before execution, workers run baseline and mutation on fixed shards, evaluators compare the outputs, and the mutation is kept only if a majority says it genuinely beat the baseline.
 
-## Who This Is For
+This is especially useful when you want more than a chat opinion. Each run leaves behind dated folders, snapshots, worker outputs, evaluator judgments, and a final decision trail you can inspect later.
 
-Use this when you already have a skill that is promising, but still inconsistent.
+## When To Use It
 
-Good fits:
+Use this when:
 
-- the skill works on happy paths but breaks on ambiguity or edge cases
-- you want dated runs and backups before touching the live `SKILL.md`
-- you want a repeatable improvement loop, not one-off chat opinions
-- you want to inspect exactly what changed, what got tested, and why a mutation was kept
+- a skill works on happy paths but breaks on ambiguity or edge cases
+- you want fixed cases before touching the live `SKILL.md`
+- you want a human-review gate before workers execute a plan
+- you want multi-turn chat skills tested as actual conversations, not isolated one-off replies
+- you want to know exactly why a mutation was kept or rejected
+
+## What It Produces
+
+One run gives you an `eval/` workspace beside the target skill with:
+
+- dated run folders and skill snapshots for `baseline`, `mutation`, and optional promotion
+- supervisor, worker, evaluator, and coordinator packets
+- recorded baseline and mutation outputs for each shard
+- preserved multi-turn conversation history for chat-oriented cases
+- deterministic grades plus evaluator judgments
+- final `decision.json`, `decision.md`, `summary.md`, and `history.md`
 
 ## Why It Is Different
 
-Most skill tuning workflows collapse everything into one agent doing everything at once.
+Most skill tuning workflows collapse planning, execution, scoring, and judgment into one blurry loop.
 
-`hwamony-skill-lab` splits the loop into clear roles:
+`hwamony-skill-lab` separates those jobs on purpose:
 
-- `supervisor`: proposes the improvement target, test plan, rubric, and one bounded mutation
+- `supervisor`: drafts the improvement target, test plan, rubric, and one bounded mutation
+- `human`: reviews the plan and can redirect the run before execution starts
 - `workers`: naively execute baseline and mutation on assigned shards
-- `evaluators`: compare baseline versus mutation outputs and record a judgment
-- `scripts`: preserve snapshots, collect deterministic evidence, aggregate votes, and promote the winner safely
+- `evaluators`: compare the paired outputs and record a judgment
+- `scripts`: scaffold runs, preserve artifacts, aggregate votes, and promote safely
 
-That means the run stays understandable after the fact. You can inspect the plan, the rubric, each worker shard, each evaluator judgment, and the exact backup chain used during promotion.
+That separation makes the run easier to trust. You can inspect the plan, the rubric, the raw worker outputs, the multi-turn history, the evaluator reasoning, and the exact backup chain used during promotion.
 
-## How It Works
+## How One Run Works
 
-One run follows this loop:
-
-1. Create a dated run folder beside the target skill.
-2. Freeze the current skill as the baseline snapshot.
-3. Let the supervisor define:
-   - what behavior should improve
-   - how the test should run
-   - what rubric evaluators should use
-   - what one bounded mutation to test
-4. Have workers run the baseline snapshot on their own shards.
-5. Apply one mutation to the mutation snapshot.
-6. Have workers run the mutated snapshot on the same shards.
-7. Generate deterministic evidence from the outputs.
-8. Let evaluator agents compare baseline versus mutation on each shard.
-9. Keep the mutation only if evaluator-majority says it improved over baseline.
-10. Promote the mutated snapshot back into the live `SKILL.md` with backups and summaries.
+1. Initialize an `eval/` workspace beside the target skill.
+2. Freeze the current skill into baseline and mutation snapshots.
+3. Let the supervisor draft the plan, rubric, and one bounded mutation.
+4. Get human feedback or approval before workers execute anything.
+5. For chat skills, design cases as multi-turn conversations and preserve the full conversation history.
+6. Run baseline and mutation on the same fixed shards.
+7. Generate deterministic evidence from the recorded outputs.
+8. Let evaluators judge whether the mutation actually improved over baseline.
+9. Promote the mutation only if evaluator-majority says it won.
 
 ## Quickstart
 
@@ -58,73 +64,75 @@ python3 scripts/orchestrate_skill_lab.py start /path/to/my-skill --attempts 3
 
 Then:
 
-1. Fill the supervisor packet in `eval/runs/run-YYYYMMDD-###/packets/supervisor.md`
-2. Run worker shards and record outputs under:
+1. Fill `eval/runs/run-YYYYMMDD-###/packets/supervisor.md`
+2. Review the plan, rubric, and proposed mutation with the human before dispatching workers
+3. Run baseline and mutation shards and record outputs under:
    - `outputs/baseline/...`
    - `outputs/mutation/...`
-3. Generate deterministic evidence:
+   - `outputs/transcripts/...` for multi-turn conversation history
+4. Generate deterministic evidence:
 
 ```bash
 python3 scripts/orchestrate_skill_lab.py review /path/to/my-skill --run-id run-YYYYMMDD-###
 ```
 
-4. Let evaluator agents complete `judgments/*.json`
-5. Finalize the run:
+5. Let evaluators complete `judgments/*.json`
+6. Finalize the run:
 
 ```bash
 python3 scripts/orchestrate_skill_lab.py finalize /path/to/my-skill --run-id run-YYYYMMDD-### --summary "What changed and why"
 ```
 
-## What You Get
-
-Every target skill gets an `eval/` workspace with:
-
-- `profile.yaml`: evaluation profile
-- `cases/train`, `cases/regression`, `cases/holdout`: fixed test cases
-- `runs/run-YYYYMMDD-###/`: dated experiment folders
-- `backups/`: original, mutation, and promotion snapshots
-- `packets/`: supervisor, worker, evaluator, and coordinator briefs
-- `outputs/`: recorded baseline and mutation executions
-- `grades/`: deterministic evidence from the recorded outputs
-- `judgments/`: evaluator-agent decisions per shard
-- `scores.json`, `decision.json`, `decision.md`: aggregated result and rationale
-- `artifact-guide.md`: human-readable explanation of what every generated file means
-- `summary.md`, `results.tsv`, `history.md`: long-term experiment trail
-
 ## Example Prompts
 
+Safe examples:
+
 - `Use $hwamony-skill-lab to harden this skill with train and regression cases before we edit SKILL.md.`
+- `Use $hwamony-skill-lab to draft the rubric and mutation plan first, show it to me for feedback, and only then run the loop.`
 - `Use $hwamony-skill-lab to test one bounded mutation and keep it only if evaluator-majority says it beats the baseline.`
-- `Use $hwamony-skill-lab to make this skill auditable with dated runs, backups, and judgment records.`
-- `Use $hwamony-skill-lab to propose the rubric and shard plan first, then run a single autoresearch-style iteration.`
 
-## Audit Trail
+Hook examples:
 
-This skill is built for post-run review.
+- `Use $hwamony-skill-lab to turn this messy counseling skill into a real multi-turn evaluation loop with preserved agent-to-agent conversation history.`
+- `Use $hwamony-skill-lab to find out whether this agent skill actually got better, or whether we just rewrote the prompt and hoped for the best.`
+- `Use $hwamony-skill-lab to create a dated audit trail for this chat skill so I can inspect the plan, the transcripts, the evaluator votes, and the promotion decision.`
 
-After a run, you should be able to answer:
+## What Makes It Credible
 
-- what the supervisor was trying to improve
-- what exact mutation was tested
-- which cases each worker ran
-- what baseline and mutation outputs each shard produced
-- what deterministic evidence existed
-- how each evaluator judged the pair
-- why the mutation was kept or discarded
-- which snapshot replaced the live `SKILL.md`
+This skill is backed by a concrete script surface, not just README claims:
+
+- `scripts/init_skill_eval.py`: scaffolds the eval workspace
+- `scripts/run_skill_eval.py`: creates a dated run with snapshots and shard assignments
+- `scripts/orchestrate_skill_lab.py`: generates supervisor, worker, evaluator, and coordinator packets
+- `scripts/auto_grade_skill_eval.py`: turns recorded outputs into deterministic evidence
+- `scripts/grade_skill_eval.py`: aggregates evaluator judgments into a keep/no-change decision
+- `scripts/promote_skill_candidate.py`: promotes the winning mutation with backups
+- `scripts/record_skill_patch.py` and `scripts/summarize_skill_eval.py`: keep long-run history readable
+
+## Best Fit Demo
+
+Starting state:
+- you have a skill that feels useful, but the behavior drifts across turns or edge cases
+
+Request:
+- ask `hwamony-skill-lab` to build cases, draft one mutation, and show you the plan before any execution starts
+
+Action:
+- workers record baseline and mutation outputs on the same shards
+- chat-oriented cases also preserve full multi-turn conversation history
+- evaluators compare the paired runs with both deterministic evidence and qualitative judgment
+
+Result:
+- you get a clear keep/no-change decision with the underlying artifacts still intact for review
 
 ## Boundaries
 
 - this is for improving a skill, not using a skill once
 - it favors narrow, attributable mutations over broad rewrites
-- deterministic checks help, but they are not the final judge of quality
+- deterministic checks are evidence, not the final judge of quality
 - if the rubric is weak, the loop can still optimize the wrong thing
+- public-facing polish does not replace real test coverage
 
 ## Credits
 
-This skill was shaped with two explicit references:
-
-- `$autoresearch`: for the single-mutation keep/discard loop, baseline-first mindset, and skill-optimization framing
-- Andrej Karpathy's `autoresearch`: for the broader autonomous experimentation pattern of trying one bounded change, measuring it against a baseline, and only keeping verified improvements
-
-`hwamony-skill-lab` adapts that research-loop idea to skill improvement: instead of optimizing training code, it optimizes `SKILL.md` behavior with supervisor planning, naive execution workers, evaluator-agent judgments, and promotion-safe backups.
+This skill draws directly on the baseline-first, single-mutation improvement pattern behind `$autoresearch` and Andrej Karpathy's broader `autoresearch` framing, but adapts that idea to `SKILL.md` behavior with human review, worker shards, evaluator judgments, transcript preservation, and promotion-safe backups.
