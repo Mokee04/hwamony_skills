@@ -1,0 +1,69 @@
+{
+  "eval_files": [
+    "profile.yaml",
+    "results.tsv",
+    "summary.md",
+    "history.md"
+  ],
+  "eval_dirs": [
+    "runs",
+    "backups"
+  ],
+  "run_dirs": [
+    "packets",
+    "outputs",
+    "grades",
+    "judgments"
+  ],
+  "run_files": [
+    "manifest.json",
+    "plan.md",
+    "plan.json",
+    "rubric.json",
+    "baseline.json",
+    "mutation.json",
+    "assignments.json",
+    "scores.json",
+    "decision.md",
+    "decision.json",
+    "artifact-guide.md",
+    "feedback.md",
+    "patch-plan.md"
+  ],
+  "grade_fields": [
+    "worker",
+    "baseline_total",
+    "mutation_total",
+    "delta",
+    "verdict",
+    "baseline_dimensions",
+    "mutation_dimensions",
+    "baseline_case_results",
+    "mutation_case_results",
+    "baseline_regression_pass",
+    "mutation_regression_pass",
+    "rationale"
+  ],
+  "judgment_fields": [
+    "worker",
+    "status",
+    "verdict",
+    "confidence",
+    "baseline_better_on",
+    "mutation_better_on",
+    "tie_on",
+    "rationale",
+    "risks",
+    "deterministic_evidence_path"
+  ],
+  "results_columns": [
+    "run_id",
+    "baseline_score",
+    "mutation_score",
+    "improved_votes",
+    "worker_count",
+    "decision",
+    "changed_files",
+    "notes"
+  ]
+}

@@ -7,6 +7,8 @@ import argparse
 from pathlib import Path
 from textwrap import dedent
 
+from lab_config import case_groups, eval_dirs, results_header
+
 
 def write_text(path: Path, content: str, force: bool = False) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -28,8 +30,10 @@ def main() -> int:
         raise SystemExit(f"Target skill is missing SKILL.md: {target_root}")
 
     eval_root = target_root / "eval"
-    (eval_root / "cases").mkdir(parents=True, exist_ok=True)
-    (eval_root / "runs").mkdir(parents=True, exist_ok=True)
+    for eval_dir in eval_dirs():
+        (eval_root / eval_dir).mkdir(parents=True, exist_ok=True)
+    for case_group in case_groups():
+        (eval_root / "cases" / case_group).mkdir(parents=True, exist_ok=True)
 
     write_text(
         eval_root / "profile.yaml",
@@ -44,35 +48,47 @@ def main() -> int:
               - describe likely failure modes here
             dimensions:
               task_success: 5
-            human_review_required: false
             pass_thresholds:
               task_success: 4
             pass_at_k: 3
+            autonomy_mode: guardrailed
             """
         ),
         force=args.force,
     )
+
+    case_template = dedent(
+        """
+        # Case Title
+
+        ## User Input
+
+        ## Must Have
+
+        - literal:required phrase
+        - regex:required pattern
+
+        ## Must Not
+
+        - literal:forbidden phrase
+
+        ## Grader Hints
+
+        - what matters most
+        - use literal: or regex: prefixes when you want deterministic matching
+        """
+    )
+
+    for case_group in case_groups():
+        write_text(
+            eval_root / "cases" / case_group / "case-template.md",
+            case_template,
+            force=args.force,
+        )
+
     write_text(
-        eval_root / "cases" / "case-template.md",
-        dedent(
-            """
-            # Case Title
-
-            ## User Input
-
-            ## Must Have
-
-            - required behavior
-
-            ## Must Not
-
-            - forbidden behavior
-
-            ## Grader Hints
-
-            - what matters most
-            """
-        ),
+        eval_root / "results.tsv",
+        results_header() + "\n",
         force=args.force,
     )
     write_text(

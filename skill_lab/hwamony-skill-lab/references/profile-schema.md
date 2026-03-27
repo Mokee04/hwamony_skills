@@ -10,9 +10,9 @@ Use this shape for `eval/profile.yaml`.
 - `goals`
 - `failure_modes`
 - `dimensions`
-- `human_review_required`
 - `pass_thresholds`
 - `pass_at_k`
+- `autonomy_mode`
 
 ## Suggested Values
 
@@ -30,6 +30,26 @@ Use this shape for `eval/profile.yaml`.
 - `low`
 - `medium`
 - `high`
+
+`autonomy_mode`
+
+- `automatic`
+- `guardrailed`
+- `score-only`
+
+Use:
+
+- `automatic` for low-risk targets where direct promotion is acceptable
+- `guardrailed` for medium-risk targets where the lab may promote improvements but must respect stricter regression rules
+- `score-only` for high-risk targets where the lab should stop at scored recommendations without replacing the live skill
+
+The typical run shape is:
+
+- supervisor planning phase first
+- one bounded mutation per run
+- several worker shards
+- evaluator judgments on each shard
+- majority-over-baseline promotion
 
 ## Example
 
@@ -49,11 +69,11 @@ dimensions:
   output_structure: 5
   specificity: 4
   workflow_fitness: 4
-human_review_required: false
 pass_thresholds:
   task_success: 4
   output_structure: 5
   specificity: 4
   workflow_fitness: 4
 pass_at_k: 3
+autonomy_mode: guardrailed
 ```

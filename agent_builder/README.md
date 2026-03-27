@@ -1,8 +1,10 @@
 # Agent Builder Skills
 
-AI agent builder and prompt engineering skills for turning a fuzzy idea into a designed system, working implementation, repeatable evaluation, and a more publishable asset.
+AI agent builder and prompt engineering skills for turning a fuzzy idea into a designed system, working implementation, repeatable evaluation, and a publishable asset.
 
 This category is strongest when the work stops being “just write me a prompt” and turns into AI agent architecture, prompt engineering, tooling, evaluation, or reusable system design.
+
+`skill` improvement infrastructure now lives in the sibling [`skill_lab`](../skill_lab/README.md) category. `agent_builder` is for building, implementing, evaluating, extending, and showcasing agent systems themselves.
 
 ## 🚀 Best Starting Points
 
@@ -11,6 +13,7 @@ This category is strongest when the work stops being “just write me a prompt�
 - implementing provider-aware runtime code after the architecture is chosen
 - evaluating whether a built system is actually getting better
 - packaging a good internal skill so other people can understand and reuse it
+- finding external skills that can extend your toolkit
 
 ## 🧰 Included Skills
 
@@ -83,20 +86,6 @@ Use this when you want to:
 - find a skill for a specific framework or workflow
 - install a promising skill from GitHub
 
-### `hwamony-skill-harness`
-
-[Open skill README](hwamony-skill-harness/README.md)
-
-Turns promising but brittle skills into repeatable eval loops with fixed cases, run evidence, and patch history.
-
-Use this when you want to:
-
-- analyze a target skill before changing it
-- create fixed eval cases beside the target skill
-- record run-by-run evidence and patch history
-- improve a skill through repeatable regressions instead of vague impressions
-- stop debating whether a change helped and rerun the same cases instead
-
 ### `hwamony-skill-showcase`
 
 [Open skill README](hwamony-skill-showcase/README.md)
@@ -118,8 +107,9 @@ Use this when you want to:
 - reducing architecture guesswork
 - building reusable systems instead of one-off experiments
 - connecting design, implementation, and evaluation into one loop
-- evaluating and hardening the skills themselves
+- evaluating agent systems and hardening prompt systems
 - helping strong internal skills look legible and valuable from the outside
+- deciding when to stay inside `agent_builder` versus when to move into `skill_lab` for skill-level improvement loops
 
 ## 🎯 Good Fit
 
@@ -136,7 +126,7 @@ If you are new to this folder, a simple path is:
 1. start with `hwamony-agent-system-builder`
 2. move to `hwamony-agent-system-implementer`
 3. use `hwamony-agent-system-evaluator` after implementation exists
-4. use `hwamony-skill-harness` when you want to evaluate and improve the skills themselves
+4. use the `skill_lab` category when you want to evaluate and improve the skills themselves
 
 Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-search-skills` when you want to extend your toolkit with external skills, and `hwamony-skill-showcase` when the work shifts from building the skill to publishing it well.
 
@@ -146,8 +136,6 @@ Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-
 - `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
 - `Use $hwamony-agent-system-implementer to scaffold the selected architecture in Python.`
 - `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
-- `Use $hwamony-skill-harness to test this skill, record the failures, and improve it with a repeatable eval loop.`
-- `Use $hwamony-skill-harness to turn this messy but promising skill into fixed cases, run folders, and a patch history we can trust.`
 - `Use $hwamony-skill-showcase to rewrite this internal skill so GitHub visitors instantly understand it and search-friendly metadata is ready to ship.`
 
 ## ⚖️ License Note

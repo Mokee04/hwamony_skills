@@ -1,0 +1,36 @@
+{
+  "case_groups": [
+    "train",
+    "regression",
+    "holdout"
+  ],
+  "autonomy_modes": [
+    "automatic",
+    "guardrailed",
+    "score-only"
+  ],
+  "loop": [
+    "supervisor proposes the test strategy, target improvement area, rubric, and one bounded mutation",
+    "measure the current baseline across worker shards",
+    "apply exactly one bounded mutation to a copy of the skill",
+    "rerun the same worker shards on the mutated copy",
+    "generate deterministic evidence from the shard outputs",
+    "evaluator agents compare mutation versus baseline shard by shard",
+    "keep the mutation only when a majority of evaluator judgments say it improved"
+  ],
+  "decision_policy": {
+    "keep_requires": [
+      "supervisor_defined_rubric",
+      "single_bounded_mutation",
+      "majority_of_evaluator_judgments_improve",
+      "respects_autonomy_mode"
+    ],
+    "discard_on": [
+      "no_majority_improvement",
+      "incomplete_worker_results",
+      "incomplete_evaluator_judgments",
+      "rubric_tampering",
+      "broad_multi_change_mutation"
+    ]
+  }
+}

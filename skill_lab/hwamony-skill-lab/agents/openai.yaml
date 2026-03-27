@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Skill Lab"
+  short_description: "Run supervisor-planned skill iterations with naive workers, evaluator agents, and majority-over-baseline promotion"
+  default_prompt: "Use $hwamony-skill-lab to let a supervisor define a rubric and one bounded mutation, have workers execute baseline and mutation on shards, and keep the mutation only if evaluator agents judge a majority of shards as improved."

@@ -1,0 +1,21 @@
+{
+  "roles": [
+    {
+      "id": "supervisor",
+      "count": 1,
+      "description": "Starts each iteration by proposing the test strategy, target improvement area, rubric, and one bounded mutation."
+    },
+    {
+      "id": "worker",
+      "count": 3,
+      "name_pattern": "worker-{index_letter}",
+      "description": "Naively executes the baseline and mutated skill on one shard of test inputs and records the outputs."
+    },
+    {
+      "id": "evaluator",
+      "count": 3,
+      "name_pattern": "evaluator-{index_letter}",
+      "description": "Compares baseline and mutation outputs for one shard using the supervisor's rubric and records a judgment."
+    }
+  ]
+}

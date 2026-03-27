@@ -1,8 +1,8 @@
 # hwamony_skills
 
-Reusable AI skills and agent workflows for prompt engineering, research workflows, ideation, skill evaluation, and publishable GitHub docs.
+Reusable AI skills and agent workflows for prompt engineering, research workflows, ideation, skill improvement, and publishable GitHub docs.
 
-This GitHub repository collects reusable `hwamony-` skills across agent building, prompt engineering, research workflows, ideation, naming, skill evaluation, and careful human-facing conversations. Each skill is documented so a new visitor can inspect it quickly, understand what user job it solves, and decide whether it is worth trying.
+This GitHub repository collects reusable `hwamony-` skills across agent building, prompt engineering, research workflows, ideation, naming, skill improvement, and careful human-facing conversations. Each skill is documented so a new visitor can inspect it quickly, understand what user job it solves, and decide whether it is worth trying.
 
 If you only try a few first, start with the flagship skills below.
 
@@ -11,7 +11,7 @@ If you only try a few first, start with the flagship skills below.
 - AI skills for agent building, prompt engineering, and system design
 - research workflow skills for desk research, competitor scans, and source-backed memos
 - ideation skills for problem framing, idea generation, naming, positioning, and launch copy
-- skill evaluation and skill showcase workflows for improving and publishing reusable skills
+- skill improvement and skill showcase workflows for hardening and publishing reusable skills
 - structured human-facing conversation skills with visible safety boundaries
 
 ## ⭐ Why Star This Repo
@@ -27,7 +27,7 @@ If you only try a few first, start with the flagship skills below.
 - turn a broad question into staged desk research with saved sources
 - turn a vague problem into a shortlist of stronger solution directions
 - turn a service brief into market-aware names and launch copy
-- turn a promising but messy skill into fixed eval cases, run history, and evidence-backed improvements
+- turn a promising but messy skill into fixed cases, dated runs, backups, and evidence-backed improvements
 - turn a good internal skill into a public-facing README, stronger GitHub metadata, and a launch-ready showcase
 
 ## 🚀 Start Here
@@ -38,8 +38,8 @@ If you only try a few first, start with the flagship skills below.
   Turn one-shot searching into staged desk research with saved sources and reusable artifacts.
 - [`hwamony-creative-thinking`](ideation/hwamony-creative-thinking/README.md)
   Turn a fuzzy brief into core concepts, a visual map, distant-combination ideas, and a shortlist that still keeps one surprising lane alive.
-- [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
-  Turn a promising skill into a repeatable eval loop with fixed cases, evidence, and patch history.
+- [`hwamony-skill-lab`](skill_lab/hwamony-skill-lab/README.md)
+  Turn a promising skill into dated experiments, fixed cases, supervisor-planned mutations, evaluator-agent judgments, and safe promotion.
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
   Turn an internal skill into a public-facing README, stronger discoverability signals, and launch-ready GitHub copy.
 
@@ -56,7 +56,7 @@ If you only try a few first, start with the flagship skills below.
 - If your prompt keeps breaking when the task gets real: start with [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
 - If your research questions are broad and you need saved evidence: start with [`hwamony-desk-research`](research/hwamony-desk-research/README.md)
 - If the team is brainstorming the wrong thing: start with [`hwamony-creative-thinking`](ideation/hwamony-creative-thinking/README.md)
-- If your skill is promising but you still cannot prove it is improving: start with [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
+- If your skill is promising but you still cannot prove it is improving: start with [`hwamony-skill-lab`](skill_lab/hwamony-skill-lab/README.md)
 - If you need a name and launch copy that still fits the live market: start with [`hwamony-service-naming-copy`](ideation/hwamony-service-naming-copy/README.md)
 - If your skill works but still looks private or hard to discover on GitHub: start with [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
 - If you are building an agent from scratch: start with [`hwamony-agent-system-builder`](agent_builder/hwamony-agent-system-builder/README.md)
@@ -66,7 +66,7 @@ If you only try a few first, start with the flagship skills below.
 - `Use $hwamony-prompt-architect to turn this messy system prompt into a production-ready prompt spec with schema, tool rules, and model guidance.`
 - `Use $hwamony-desk-research to turn this vague market question into a scoped research folder with preserved sources and a final memo.`
 - `Use $hwamony-creative-thinking to find the real product problem, map the concept space, and keep one contrarian option alive before we commit to the safe answer.`
-- `Use $hwamony-skill-harness to turn this messy skill into fixed eval cases, run evidence, and a patch loop we can rerun after every edit.`
+- `Use $hwamony-skill-lab to turn this messy skill into fixed cases, dated runs, supervisor-planned mutations, and evaluator-backed keep/discard decisions.`
 - `Use $hwamony-service-naming-copy to turn this service brief into strong naming lanes, shortlist candidates, and launch-ready copy.`
 - `Use $hwamony-skill-showcase to rewrite this internal-only skill so strangers on GitHub immediately understand it and the repo metadata is ready to ship.`
 
@@ -94,8 +94,13 @@ If you only try a few first, start with the flagship skills below.
 - [`hwamony-agent-system-implementer`](agent_builder/hwamony-agent-system-implementer/README.md)
 - [`hwamony-prompt-architect`](agent_builder/hwamony-prompt-architect/README.md)
 - [`hwamony-search-skills`](agent_builder/hwamony-search-skills/README.md)
-- [`hwamony-skill-harness`](agent_builder/hwamony-skill-harness/README.md)
 - [`hwamony-skill-showcase`](agent_builder/hwamony-skill-showcase/README.md)
+
+### `skill_lab`
+
+- [`hwamony-skill-lab`](skill_lab/hwamony-skill-lab/README.md)
+
+This category now owns skill-improvement loops that used to be described more loosely as harness workflows. If the job is "make this skill reliably better over time," start here rather than in `agent_builder`.
 
 ## 📝 Repo Notes
 

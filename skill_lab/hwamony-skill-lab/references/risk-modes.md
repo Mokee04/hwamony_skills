@@ -12,8 +12,10 @@ Examples:
 
 Default posture:
 
-- patch directly when the improvement is obvious
-- rerun after each patch batch
+- allow `automatic` autonomy mode
+- let the supervisor test one bounded mutation at a time
+- patch directly when a majority of shards improve
+- rerun after each accepted mutation
 
 ## Medium Risk
 
@@ -25,7 +27,9 @@ Examples:
 
 Default posture:
 
+- prefer `guardrailed` mode
 - patch directly for structure and clarity
+- prefer broader shard coverage and stricter evaluator rubrics before accepting a mutation
 - pause when the change affects live claims, freshness rules, or tool safety
 
 ## High Risk
@@ -38,7 +42,8 @@ Examples:
 
 Default posture:
 
-- propose first
-- require human review
+- use `score-only` mode
 - keep a strict rerun trail
-- avoid broad tone or scope rewrites without approval
+- avoid broad tone or scope rewrites without a strong failure signal
+- never let workers decide whether a mutation should be kept
+- require evaluator rationale to be especially explicit
