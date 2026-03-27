@@ -203,6 +203,13 @@ If possible, also collect:
 
 If information is still thin, say so plainly and ask the next `2-4` best questions.
 
+Before asking another batch of questions, run this quick sufficiency check:
+
+- if the user's latest message already gives you one concrete episode, a reasonably observable behavior, at least one antecedent or setting event, and at least one immediate consequence, do not restart with the default opening intake
+- if only `1-2` high-value pieces are still missing, ask only those missing questions instead of a broader interview batch
+- if the leading `1-2` function hypotheses are already reasonably distinguishable, move straight to the transition sentence and interpretation
+- when you do move to interpretation early, briefly name what information is still uncertain rather than stretching the interview just to collect more data
+
 Once the minimum data is present and the leading `1-2` function hypotheses are reasonably distinguishable, stop interviewing and move to interpretation. Do not keep asking low-value questions just because more data could exist.
 
 Use a transition sentence such as:
