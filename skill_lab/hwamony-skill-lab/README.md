@@ -6,7 +6,7 @@ Improve a `SKILL.md` through auditable baseline-vs-mutation runs instead of vagu
 
 This is especially useful when you want more than a chat opinion. Each run leaves behind dated folders, snapshots, worker outputs, evaluator judgments, and a final decision trail you can inspect later.
 
-## When To Use It
+## 🧭 When To Use It
 
 Use this when:
 
@@ -16,7 +16,7 @@ Use this when:
 - you want multi-turn chat skills tested as actual conversations, not isolated one-off replies
 - you want to know exactly why a mutation was kept or rejected
 
-## What It Produces
+## 📦 What It Produces
 
 One run gives you an `eval/` workspace beside the target skill with:
 
@@ -27,7 +27,7 @@ One run gives you an `eval/` workspace beside the target skill with:
 - deterministic grades plus evaluator judgments
 - final `decision.json`, `decision.md`, `summary.md`, and `history.md`
 
-## Why It Is Different
+## ✨ Why It Is Different
 
 Most skill tuning workflows collapse planning, execution, scoring, and judgment into one blurry loop.
 
@@ -41,7 +41,7 @@ Most skill tuning workflows collapse planning, execution, scoring, and judgment 
 
 That separation makes the run easier to trust. You can inspect the plan, the rubric, the raw worker outputs, the multi-turn history, the evaluator reasoning, and the exact backup chain used during promotion.
 
-## How One Run Works
+## 🔬 How One Run Works
 
 1. Initialize an `eval/` workspace beside the target skill.
 2. Freeze the current skill into baseline and mutation snapshots.
@@ -53,7 +53,7 @@ That separation makes the run easier to trust. You can inspect the plan, the rub
 8. Let evaluators judge whether the mutation actually improved over baseline.
 9. Promote the mutation only if evaluator-majority says it won.
 
-## Quickstart
+## 🚀 Quickstart
 
 Assume the target skill lives at `/path/to/my-skill`.
 
@@ -83,7 +83,7 @@ python3 scripts/orchestrate_skill_lab.py review /path/to/my-skill --run-id run-Y
 python3 scripts/orchestrate_skill_lab.py finalize /path/to/my-skill --run-id run-YYYYMMDD-### --summary "What changed and why"
 ```
 
-## Example Prompts
+## 💬 Example Prompts
 
 Safe examples:
 
@@ -97,7 +97,7 @@ Hook examples:
 - `Use $hwamony-skill-lab to find out whether this agent skill actually got better, or whether we just rewrote the prompt and hoped for the best.`
 - `Use $hwamony-skill-lab to create a dated audit trail for this chat skill so I can inspect the plan, the transcripts, the evaluator votes, and the promotion decision.`
 
-## What Makes It Credible
+## 🛠️ What Makes It Credible
 
 This skill is backed by a concrete script surface, not just README claims:
 
@@ -109,7 +109,7 @@ This skill is backed by a concrete script surface, not just README claims:
 - `scripts/promote_skill_candidate.py`: promotes the winning mutation with backups
 - `scripts/record_skill_patch.py` and `scripts/summarize_skill_eval.py`: keep long-run history readable
 
-## Best Fit Demo
+## 🎯 Best Fit Demo
 
 Starting state:
 - you have a skill that feels useful, but the behavior drifts across turns or edge cases
@@ -125,7 +125,7 @@ Action:
 Result:
 - you get a clear keep/no-change decision with the underlying artifacts still intact for review
 
-## Boundaries
+## ⚠️ Boundaries
 
 - this is for improving a skill, not using a skill once
 - it favors narrow, attributable mutations over broad rewrites
