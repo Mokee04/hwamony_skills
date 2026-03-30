@@ -31,6 +31,19 @@ Use this when you want to:
 - define message-history strategy
 - prepare a clean implementation handoff
 
+### `hwamony-requirements-clarifier`
+
+[Open skill file](hwamony-requirements-clarifier/SKILL.md)
+
+Clarifies ambiguous user requests into actionable briefs through focused questions, proposed interpretations, and working-brief summaries.
+
+Use this when you want to:
+
+- turn a vague ask into a concrete deliverable
+- uncover hidden assumptions and non-goals
+- ask better clarification questions instead of broad questionnaires
+- identify what the user really wants before planning or implementation
+
 ### `hwamony-agent-system-implementer`
 
 [Open skill README](hwamony-agent-system-implementer/README.md)
@@ -104,6 +117,7 @@ Use this when you want to:
 ## ✨ What This Category Is Good At
 
 - turning fuzzy AI ideas into structured projects
+- turning ambiguous asks into actionable briefs before the project starts
 - reducing architecture guesswork
 - building reusable systems instead of one-off experiments
 - connecting design, implementation, and evaluation into one loop
@@ -123,16 +137,18 @@ Use this when you want to:
 
 If you are new to this folder, a simple path is:
 
-1. start with `hwamony-agent-system-builder`
-2. move to `hwamony-agent-system-implementer`
-3. use `hwamony-agent-system-evaluator` after implementation exists
-4. use the `skill_lab` category when you want to evaluate and improve the skills themselves
+1. start with `hwamony-requirements-clarifier` when the ask is still fuzzy
+2. move to `hwamony-agent-system-builder` once the brief is actionable
+3. move to `hwamony-agent-system-implementer`
+4. use `hwamony-agent-system-evaluator` after implementation exists
+5. use the `skill_lab` category when you want to evaluate and improve the skills themselves
 
 Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-search-skills` when you want to extend your toolkit with external skills, and `hwamony-skill-showcase` when the work shifts from building the skill to publishing it well.
 
 ## ✍️ Quick Prompts
 
 - `Use $hwamony-agent-system-builder to compare 3 architectures for this support copilot and tell me which one is easiest to ship first.`
+- `Use $hwamony-requirements-clarifier to figure out what I actually need from this vague project request before we plan anything.`
 - `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
 - `Use $hwamony-agent-system-implementer to scaffold the selected architecture in Python.`
 - `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
