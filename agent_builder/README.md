@@ -1,12 +1,22 @@
 # Agent Builder Skills
 
-AI agent builder and prompt engineering skills for turning a fuzzy idea into a designed system, working implementation, repeatable evaluation, and a publishable asset.
+Turn a fuzzy AI idea into a designed system, working implementation, repeatable evaluation, and a publishable asset.
 
-This category is strongest when the work stops being “just write me a prompt” and turns into AI agent architecture, prompt engineering, tooling, evaluation, or reusable system design.
+This category is strongest when the work stops being “just write me a prompt” and turns into AI agent architecture, prompt engineering, tooling, evaluation, or reusable system design. It gives you a path from messy requirements to build-ready artifacts and public-facing documentation without treating those as disconnected tasks.
 
 `skill` improvement infrastructure now lives in the sibling [`skill_lab`](../skill_lab/README.md) category. `agent_builder` is for building, implementing, evaluating, extending, and showcasing agent systems themselves.
 
-## 🚀 Best Starting Points
+## 🚀 Start Here
+
+Copy one of these prompts:
+
+- `Use $hwamony-requirements-clarifier to figure out what I actually need from this vague project request before we plan anything.`
+- `Use $hwamony-agent-system-builder to compare 3 architectures for this support copilot and tell me which one is easiest to ship first.`
+- `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
+- `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
+- `Use $hwamony-skill-showcase to rewrite this internal skill so GitHub visitors instantly understand it and search-friendly metadata is ready to ship.`
+
+## 🧭 Best Starting Points
 
 - building a new agent or assistant from requirements
 - deciding whether a task should stay single-prompt or become a workflow
@@ -14,6 +24,13 @@ This category is strongest when the work stops being “just write me a prompt�
 - evaluating whether a built system is actually getting better
 - packaging a good internal skill so other people can understand and reuse it
 - finding external skills that can extend your toolkit
+
+## ✨ Why This Category Is Different
+
+- it covers the full loop from ambiguity to implementation to evaluation to public packaging
+- it treats prompts, architecture, and history strategy as system decisions rather than isolated wording tasks
+- it includes both build-side skills and publish-side skills, so strong internal work does not stay trapped inside the repo
+- it gives visitors a readable path instead of a flat pile of AI engineering folders
 
 ## 🧰 Included Skills
 
@@ -144,15 +161,6 @@ If you are new to this folder, a simple path is:
 5. use the `skill_lab` category when you want to evaluate and improve the skills themselves
 
 Use `hwamony-prompt-architect` whenever prompt design becomes central, `hwamony-search-skills` when you want to extend your toolkit with external skills, and `hwamony-skill-showcase` when the work shifts from building the skill to publishing it well.
-
-## ✍️ Quick Prompts
-
-- `Use $hwamony-agent-system-builder to compare 3 architectures for this support copilot and tell me which one is easiest to ship first.`
-- `Use $hwamony-requirements-clarifier to figure out what I actually need from this vague project request before we plan anything.`
-- `Use $hwamony-prompt-architect to turn this fragile prompt into a schema-first prompt system with tool and failure rules.`
-- `Use $hwamony-agent-system-implementer to scaffold the selected architecture in Python.`
-- `Use $hwamony-agent-system-evaluator to create a rubric and run log format for this agent before we iterate again.`
-- `Use $hwamony-skill-showcase to rewrite this internal skill so GitHub visitors instantly understand it and search-friendly metadata is ready to ship.`
 
 ## ⚖️ License Note
 

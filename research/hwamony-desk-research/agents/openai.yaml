@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Desk Research"
-  short_description: "Staged desk research with saved sources and checkpoints."
-  default_prompt: "Use $hwamony-desk-research to scope a competitor scan of Korean AI coding assistants, propose a source strategy, gather evidence in batches, save the source texts, and stop after batch 1 for my feedback."
+  short_description: "Turn broad questions into staged desk research with saved sources, checkpoints, and reusable artifacts"
+  default_prompt: "Use $hwamony-desk-research to scope this question, propose a source strategy, gather evidence in batches, save the source texts, and pause after the first batch for feedback."

@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Prompt Architect"
-  short_description: "Create, critique, and harden reusable prompt systems"
-  default_prompt: "Use $hwamony-prompt-architect to design a reusable system prompt for my workflow, and include the recommended model, output schema, tool/search rules, and whether this should stay a single prompt or become an agent."
+  short_description: "Turn fragile prompts into schema-first, tool-aware prompt systems that are easier to ship"
+  default_prompt: "Use $hwamony-prompt-architect to turn this fragile prompt into a reusable prompt system with model guidance, output schema, tool rules, and a recommendation on whether it should stay a prompt or become an agent workflow."

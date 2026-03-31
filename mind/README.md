@@ -2,7 +2,21 @@
 
 Structured self-reflection and behavior analysis skills for understanding behavior, thoughts, and emotional patterns in a careful, practical way.
 
-These are not meant to replace therapy, diagnosis, or crisis support. They are designed for careful conversations using structured approaches such as ABC functional analysis and CBT-style reflection so users can make sense of what is happening and what to look at next.
+These skills are designed for careful conversations using structured approaches such as ABC functional analysis and CBT-style reflection so users can make sense of what is happening and what to look at next. They are intentionally bounded: useful for structure, reflection, and next-step thinking, but not a replacement for therapy, diagnosis, crisis care, or emergency help.
+
+## 🚀 Start Here
+
+Copy one of these prompts:
+
+- `Use $hwamony-abc-fa to help me understand why this behavior keeps happening around homework time.`
+- `Use $hwamony-cbt-chats to walk me through a recent situation, the automatic thought I had, and a more balanced reframe.`
+
+## ✨ Why This Category Is Different
+
+- it brings structure without turning the conversation into a questionnaire dump
+- it keeps safety boundaries visible instead of hiding them in fine print
+- it is built for practical reflection and better questions, not overconfident interpretation
+- it aims to stay calm, collaborative, and concrete
 
 ## 🚀 Best Starting Points
 
@@ -61,11 +75,6 @@ Use this when you want help with:
 - legal advice
 
 If a conversation involves immediate danger, self-harm, abuse, violence, or acute medical risk, use professional or emergency support instead of relying on these skills.
-
-## ✍️ Quick Prompts
-
-- `Use $hwamony-abc-fa to help me understand why this behavior keeps happening around homework time.`
-- `Use $hwamony-cbt-chats to walk me through a recent situation, the automatic thought I had, and a more balanced reframe.`
 
 ## ⚖️ License Note
 

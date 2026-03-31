@@ -4,8 +4,11 @@ Use this reference when the user wants the skill or repository to be easier to d
 
 ## GitHub Surface Checklist
 
+- GitHub "About" sentence is short, concrete, and aligned with the README promise
 - repository description is concise and concrete
 - repository topics reflect the actual audience and ecosystem
+- homepage or docs link supports the README claim
+- badges or credibility signals help the visitor orient quickly
 - social preview image exists
 - README opening explains value before structure
 - one quickstart path exists
@@ -32,6 +35,7 @@ For awesome lists or directories:
 ## Messaging Checklist
 
 - can a new visitor explain what this is after 10 seconds?
+- is there a memorable line or handle for the project?
 - is the target user visible?
 - is the promise concrete?
 - is there a believable next step?

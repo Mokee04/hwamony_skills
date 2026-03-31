@@ -6,6 +6,26 @@ Use this reference when the user wants public-facing packaging, not only wording
 
 Choose only the outputs the situation needs.
 
+### 0. Tagline
+
+Target length:
+
+- 3-7 words
+
+Job:
+
+- give the repo a memorable handle
+- work in the README opening and GitHub "About" area
+
+Good:
+
+- `The agent that grows with you`
+- `Your coding agent just has Superpowers`
+
+Weak:
+
+- `A useful workflow for developers`
+
 ### 1. One-Liner
 
 Format:
@@ -30,15 +50,18 @@ Must include:
 
 - what it helps with
 - a human-readable object or job
+- words a relevant GitHub visitor would plausibly search for
 
 ### 3. README Opening
 
 Default structure:
 
-1. one-line value proposition
-2. 2-4 sentence explanation
-3. 3-5 bullets for key use cases or included skills
+1. short tagline
+2. one-line value proposition
+3. 2-4 sentence explanation
 4. quickstart or "start here" path
+5. 3-5 benefit-led highlights
+6. workflow or "how it works" section when relevant
 
 Optional polish:
 
@@ -46,7 +69,16 @@ Optional polish:
 - common good fits: `🚀` for launch/start, `✨` for differentiation, `🧭` for guidance, `⚠️` for caveats, `📦` for artifacts, `🔎` for research
 - keep usage restrained; the emoji should support the structure, not become the structure
 
-### 4. Example Prompts
+### 4. GitHub Surface Pack
+
+When the request is about open-source discoverability, include:
+
+- GitHub description or "About" line
+- suggested repository topics
+- docs or homepage link suggestion when appropriate
+- release or launch blurb if the user is preparing a public push
+
+### 5. Example Prompts
 
 Good example prompts:
 
@@ -82,7 +114,9 @@ Stronger:
 - `Use this skill to turn a loose market question into a research folder with scoped batches, saved source text, and a memo I can reuse next week.`
 - `Use this skill to rewrite this internal-only skill so strangers on GitHub immediately understand why it deserves a star.`
 
-### 5. Demo Scenario
+At least one prompt should act like a "hero demo" and make the transformation easy to picture in one read.
+
+### 6. Demo Scenario
 
 A good demo scenario includes:
 
@@ -93,7 +127,7 @@ A good demo scenario includes:
 
 Keep it believable. One complete realistic path is stronger than many vague ideas.
 
-### 6. Launch Copy
+### 7. Launch Copy
 
 Useful launch surfaces:
 
@@ -109,6 +143,7 @@ Useful launch surfaces:
 - Keep adjectives scarce.
 - Replace "comprehensive", "powerful", "advanced", and "robust" with actual proof.
 - If a quickstart exists, pull it above secondary material.
+- If there is no quickstart, create the lightest believable "try it now" path.
 - If there are multiple skills, highlight the top 2-3 instead of giving every item equal weight.
 - Write the copy directly from the repo evidence instead of delegating wording generation to extra comparison models.
 - If alternate phrasing helps, draft 2-3 variants yourself and keep only the strongest one or two.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony ABC FA"
-  short_description: "Guide ABC behavior analysis interviews"
-  default_prompt: "Use $hwamony-abc-fa to interview the user and explain an ABC functional analysis."
+  short_description: "Map triggers, behavior, and consequences into a cautious ABC behavior hypothesis"
+  default_prompt: "Use $hwamony-abc-fa to walk through this behavior with an ABC lens, separate the triggers, behavior, and consequences clearly, and give me a cautious hypothesis about what may be maintaining it."

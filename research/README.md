@@ -1,14 +1,29 @@
 # Research Skills
 
-AI research workflow skills for turning broad questions into scoped desk research, saved evidence, and arguments you can inspect later.
+Turn broad questions into scoped research projects, saved evidence, and arguments you can inspect later.
 
-This category is for work that needs more than a quick answer: clarifying the question, collecting evidence, preserving research artifacts, or pressure-testing a topic through competing viewpoints.
+This category is for work that needs more than a quick answer: clarifying the question, collecting evidence, preserving research artifacts, or pressure-testing a topic through competing viewpoints. It is designed for people who want research they can revisit, audit, or hand to someone else later instead of a polished answer with no visible trail.
 
-## 🚀 Best Starting Points
+## 🚀 Start Here
+
+Copy one of these prompts:
+
+- `Use $hwamony-desk-research to turn this broad market question into a scoped research folder with saved sources and a memo I can reuse next week.`
+- `Use $hwamony-desk-research to build a source-backed brief on this regulation change and preserve the raw source text.`
+- `Use $hwamony-debate-panel to turn this vague hot take into a real debate resolution with opposing panels and moderator questions.`
+
+## 🧭 Best Starting Points
 
 - turning a vague market, policy, or category question into a structured research project
 - saving sources and notes so the work is auditable later
 - exploring a debate with explicit personas instead of one assistant improvising every side
+
+## ✨ Why This Category Is Different
+
+- it favors scope, source strategy, and auditability over one-shot summary speed
+- it preserves artifacts so the work is easier to inspect and reuse later
+- it includes both evidence-gathering and structured adversarial exploration
+- it makes assumptions, tradeoffs, and disagreements more visible
 
 ## 🧰 Included Skills
 
@@ -66,12 +81,6 @@ That means:
 - documenting what was done
 - saving outputs for later reuse
 - making assumptions visible
-
-## ✍️ Quick Prompts
-
-- `Use $hwamony-desk-research to turn this broad market question into a scoped research folder with saved sources and a memo I can reuse next week.`
-- `Use $hwamony-desk-research to build a source-backed brief on this regulation change and preserve the raw source text.`
-- `Use $hwamony-debate-panel to turn this vague hot take into a real debate resolution with opposing panels and moderator questions.`
 
 ## ⚖️ License Note
 

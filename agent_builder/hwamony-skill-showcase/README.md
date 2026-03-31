@@ -1,45 +1,49 @@
 # Hwamony Skill Showcase
 
-A GitHub discoverability and README optimization skill for turning internal skills into public-facing assets with clearer positioning, example prompts, repository metadata, and launch copy.
+Turn a working skill into a GitHub showcase people instantly understand, trust, and want to try.
 
-## 🧠 What It Does
+This skill helps skill authors and repo maintainers turn an internal agent skill into a public-facing open-source asset with a sharper tagline, stronger README first screen, better GitHub metadata, clearer example prompts, and demo-ready launch copy. It is built for the moment when the skill already works, but the repository still reads like a folder dump instead of a product page for technical users.
 
-This skill packages a local skill or skill repository for public discovery on GitHub and beyond. It sharpens the positioning, rewrites the README opening, improves search-friendly wording, writes example prompts, suggests demo assets, and prepares GitHub metadata such as repository descriptions and topics. The agent using the skill writes the copy directly from the repo evidence instead of outsourcing wording to extra copy models.
+## 🚀 What You Get
 
-When a skill is being brought into the `hwamony` collection, this skill should also handle the obvious integration work by default: rename it into the `hwamony-` namespace, add the skill README, sync `agents/openai.yaml`, and update the category and root READMEs.
+- a memorable tagline and one-line value proposition
+- a README opening that explains what this is, why it matters, and how to try it now
+- GitHub-ready repository description and topic suggestions
+- example prompts that feel worth copying immediately
+- demo hooks and proof-gap notes that make the asset easier to trust
+- launch surfaces such as release copy or awesome-list blurbs when needed
+
+## 🧭 How It Works
+
+1. inspect the skill, README, metadata, and proof assets
+2. extract the strongest promise, audience, and differentiator
+3. rewrite the first screen so a stranger understands it in seconds
+4. add examples, demo hooks, and GitHub discovery surfaces
+5. flag the smallest missing proof asset that would make the repo more believable
 
 ## ✨ Why It Is Different
 
-- it focuses on public packaging, not just nicer wording
-- it improves discoverability without turning the docs into keyword spam
-- it identifies proof gaps and demo needs instead of polishing around missing substance
-- it pushes the agent to write sharper copy directly from repo evidence
-- it covers README openings, examples, metadata, and launch copy in one workflow
+- it treats a repo like a technical product page, not just documentation
+- it optimizes the whole GitHub surface: README, tagline, About text, topics, examples, and launch copy
+- it prefers proof and believable workflow over hype
+- it pushes the agent to write copy from repo evidence instead of outsourcing the thinking
+- it looks for the line that earns the scroll, not just cleaner wording
 
-## 🧭 Use It When
+## 🔎 Use It When
 
-- a skill works, but the presentation is not doing it justice
-- the README explains structure but not value
-- you want stronger GitHub discoverability through better README copy, repository descriptions, or topics
-- you need better example prompts, demo hooks, or launch copy
-- you want the agent to propose sharper phrasing variants directly
+- the skill works, but the repository undersells it
+- the README lists files or features without a strong promise
+- you want better GitHub discoverability without keyword spam
+- you need more tempting examples, a clearer quickstart, or launch copy
+- you want the repo's tagline, About text, and README opening to finally agree
 
-## 📦 Included Extras
+## 📦 Example Prompts
 
-- README structure guidance
-- distribution checklist
-- direct copywriting workflow inside the skill
+- `Use $hwamony-skill-showcase to rewrite this skill README so a GitHub visitor understands it in 10 seconds and knows what to try first.`
+- `Use $hwamony-skill-showcase to turn this internal-only skill into a public showcase with a sharper tagline, About text, topics, and example prompts.`
+- `Use $hwamony-skill-showcase to study this repo and write the first-screen README copy that sells the workflow instead of just listing files.`
+- `Use $hwamony-skill-showcase to generate a hero demo scenario, proof-gap note, and launch-ready GitHub copy for this skill.`
 
-## 🔎 What It Improves
+## 🧪 Best Next Proof Asset
 
-- first-screen README wording that helps readers and search engines understand the skill quickly
-- GitHub repository descriptions and suggested topics
-- example prompts that sound like real high-value use cases
-- demo hooks and proof notes that make the skill easier to trust and try
-
-## ✍️ Example Prompts
-
-- `Use $hwamony-skill-showcase to rewrite this skill README so GitHub visitors instantly understand what it does and why it matters.`
-- `Use $hwamony-skill-showcase to make this repo more discoverable with a better description, topics, and a clearer first-screen README opening.`
-- `Use $hwamony-skill-showcase to generate sharper example prompts, proof hooks, and launch copy for this skill.`
-- `Use $hwamony-skill-showcase to write 3 search-friendly tagline variants for this skill and pick the strongest one.`
+If a repo still feels hard to believe after the copy pass, the next thing to add is usually one realistic before/after artifact, one terminal transcript, or one demo path with expected output.

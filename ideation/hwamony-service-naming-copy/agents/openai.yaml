@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Service Naming Copy"
-  short_description: "Turn service briefs into names and launch copy"
-  default_prompt: "Use $hwamony-service-naming-copy to turn this service brief into strong candidate names and launch copy."
+  short_description: "Turn a service brief into market-aware names, shortlist candidates, and launch-ready copy"
+  default_prompt: "Use $hwamony-service-naming-copy to research the category language around this brief, generate strong naming lanes, shortlist the best candidates, and write launch-ready copy for the winner."

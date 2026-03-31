@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Skill Lab"
-  short_description: "Run human-reviewed skill eval loops with baseline-vs-mutation shards, evaluator judgments, and auditable promotion"
-  default_prompt: "Use $hwamony-skill-lab to draft one bounded skill mutation, review the plan and rubric with me before execution, run baseline and mutation on fixed shards, preserve multi-turn conversation history for chat cases, and keep the mutation only if evaluator-majority judges it better than baseline."
+  short_description: "Run auditable baseline-vs-mutation eval loops so a skill gets better with evidence instead of vibes"
+  default_prompt: "Use $hwamony-skill-lab to draft one bounded mutation for this skill, show me the plan and rubric before execution, run baseline and mutation on fixed shards, and keep the change only if evaluator-majority says it genuinely beat baseline."

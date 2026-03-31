@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hwamony Requirements Clarifier"
+  short_description: "Turn vague requests into actionable briefs before planning, prompting, or implementation"
+  default_prompt: "Use $hwamony-requirements-clarifier to surface the hidden assumptions in this request, ask the smallest set of high-value clarification questions, and leave me with a provisional brief we can actually execute."

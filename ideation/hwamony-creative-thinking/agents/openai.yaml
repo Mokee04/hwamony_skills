@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Creative Thinking"
-  short_description: "Define core concepts, map them visually, combine distant ideas, and iterate."
-  default_prompt: "Use $hwamony-creative-thinking to define the core concepts behind our brief, turn them into a mind map, combine distant branches into fresh ideas, and refine the next round based on feedback."
+  short_description: "Turn fuzzy briefs into concept maps, stronger idea combinations, and a shortlist with one surprising lane intact"
+  default_prompt: "Use $hwamony-creative-thinking to map the core concepts behind this brief, combine distant branches into stronger ideas, and narrow to a shortlist that still keeps one surprising but viable option alive."

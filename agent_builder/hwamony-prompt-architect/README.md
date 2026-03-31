@@ -1,10 +1,14 @@
 # Hwamony Prompt Architect
 
-A prompt engineering skill for designing schema-first, tool-aware prompts and agent workflows instead of one-off strings that break the moment the task gets real.
+Turn fragile prompts into schema-first, tool-aware prompt systems that are easier to ship.
 
-## 🧠 What It Does
+This skill is for moments when a prompt has to behave like part of a system, not just sound clever once. It covers prompt design, model routing, output schemas, tool rules, and the decision of whether a task should stay single-prompt or become an agent workflow.
 
-Use this skill when you need a new system prompt, a prompt refactor, or a decision on whether a task should stay single-prompt or become an agent workflow. It covers prompt engineering, model routing, tool-aware and schema-first design, and production prompt systems with caching, evals, versioning, and rollback.
+## 🚀 Start Here
+
+- `Use $hwamony-prompt-architect to turn this fragile support prompt into a schema-first prompt system with tool rules, failure handling, and eval hooks.`
+- `Use $hwamony-prompt-architect to refactor this messy research prompt into a reusable system prompt with clear output schema and citation rules.`
+- `Use $hwamony-prompt-architect to decide whether this workflow should stay single-prompt or become an agent workflow with memory and tools.`
 
 ## ✨ Why It Is Different
 
@@ -12,20 +16,6 @@ Use this skill when you need a new system prompt, a prompt refactor, or a decisi
 - it decides when a task should stop being a prompt and become a workflow
 - it bakes in freshness checks and Context7 use for unstable technical guidance
 - it is built for reusable production prompts, not just clever wording
-
-## 🎯 Best For
-
-- teams shipping assistants, copilots, or prompt-heavy tools
-- users who need output schemas, tool rules, and failure handling
-- moments when prompt quality now affects reliability, not just style
-
-## 🚫 Not Just Prompt Editing
-
-- not just “make this prompt better”
-- not just “pick a model for me”
-- not just “rewrite the wording”
-
-This skill is strongest when the real problem is system design around the prompt: routing, output shape, tool use, guardrails, and what should happen when the prompt alone stops being enough.
 
 ## 🧭 Use It When
 
@@ -42,9 +32,12 @@ This skill is strongest when the real problem is system design around the prompt
 - cross-vendor model selection
 - source-grounded and tool-aware prompt design
 
-## ✍️ Example Prompts
+## 🧠 Best Fit
 
-- `Use $hwamony-prompt-architect to turn this fragile support prompt into a schema-first prompt system with tool rules, failure handling, and eval hooks.`
-- `Use $hwamony-prompt-architect to refactor this messy research prompt into a reusable system prompt with clear output schema and citation rules.`
-- `Use $hwamony-prompt-architect to decide whether this workflow should stay single-prompt or become an agent workflow with memory and tools.`
-- `Use $hwamony-prompt-architect to compare what should live in the system prompt, tool contract, and downstream evaluator for this task.`
+- teams shipping assistants, copilots, or prompt-heavy tools
+- users who need output schemas, tool rules, and failure handling
+- moments when prompt quality now affects reliability, not just style
+
+## ⚠️ Boundary
+
+This skill is strongest when the real problem is system design around the prompt. If the task is only wording polish on an already stable prompt, a lighter rewrite path may be enough.

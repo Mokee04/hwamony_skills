@@ -1,10 +1,14 @@
 # Hwamony Agent System Evaluator
 
-An AI agent evaluation skill for testing a built system with run logs, rubrics, and iteration-ready feedback.
-
-## 🧠 What It Does
+Turn a running agent system into rubric-backed evidence, stored evaluation artifacts, and the next improvement backlog.
 
 This skill treats AI agent evaluation as a repeatable workflow, not a one-off opinion. It reads implementation artifacts, writes or updates the test plan, initializes run folders, logs inputs and outputs, scores results with a rubric, and captures the next improvement loop.
+
+## 🚀 Start Here
+
+- `Use $hwamony-agent-system-evaluator to create a test plan for my research agent with run folders, rubric criteria, and failure notes.`
+- `Use $hwamony-agent-system-evaluator to score 5 sample runs, preserve the evidence, and summarize the biggest weaknesses for the next implementation pass.`
+- `Use $hwamony-agent-system-evaluator to turn these runs into a backlog of prompt, routing, and implementation fixes.`
 
 ## ✨ Why It Is Different
 
@@ -12,18 +16,6 @@ This skill treats AI agent evaluation as a repeatable workflow, not a one-off op
 - it stores evaluation artifacts so iteration has a paper trail
 - it combines scoring, notes, and user feedback into one loop
 - it is built to feed implementation backlogs, not just generate a report
-
-## 🎯 Best For
-
-- systems that already run but are still improving
-- teams that need evidence before changing prompts, code, or routing
-- workflows where evaluation needs to create the next implementation backlog
-
-## 🚫 Not Just “Test It”
-
-This skill is not for giving a thumbs-up or thumbs-down impression.
-
-It is strongest when you need repeatable run logs, rubric-based scoring, stored evidence, and a clear bridge from evaluation findings back into the next implementation pass.
 
 ## 🧭 Use It When
 
@@ -40,9 +32,12 @@ It is strongest when you need repeatable run logs, rubric-based scoring, stored 
 - feedback logs
 - a clearer handoff back to implementation
 
-## ✍️ Example Prompts
+## 🧠 Best Fit
 
-- `Use $hwamony-agent-system-evaluator to create a test plan for my research agent with run folders, rubric criteria, and failure notes.`
-- `Use $hwamony-agent-system-evaluator to score 5 sample runs, preserve the evidence, and summarize the biggest weaknesses for the next implementation pass.`
-- `Use $hwamony-agent-system-evaluator to set up a repeatable experiment log for this prompt system instead of relying on vague impressions.`
-- `Use $hwamony-agent-system-evaluator to turn these runs into a backlog of prompt, routing, and implementation fixes.`
+- systems that already run but are still improving
+- teams that need evidence before changing prompts, code, or routing
+- workflows where evaluation needs to create the next implementation backlog
+
+## ⚠️ Boundary
+
+This skill is not for giving a thumbs-up or thumbs-down impression. If the system does not exist yet, use the builder or implementer first and come back when there is something real to evaluate.

@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Search Skills"
-  short_description: "Search GitHub and install matching agent skills"
-  default_prompt: "Use $hwamony-search-skills to find and install a GitHub skill for React testing."
+  short_description: "Find installable GitHub skills, rank the best fits, and move to safer pinned installs"
+  default_prompt: "Use $hwamony-search-skills to find the best installable GitHub skills for this job, rank the top options by fit and installability, and give me a pinned install path for the winner."

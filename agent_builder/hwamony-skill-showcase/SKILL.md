@@ -13,6 +13,13 @@ This skill reframes the asset for public discovery: identify what problem the sk
 
 Prefer evidence over hype. Strong public docs should make the skill easier to trust and easier to try in under 5 minutes.
 
+Treat the repository like a product page for technical users, not a filing cabinet. The first screen should make a stranger think:
+
+- `I get what this is`
+- `I see why this is different`
+- `I know how to try it right now`
+- `I believe the repo can back up its promise`
+
 ## Best Fits
 
 Use this skill for requests such as:
@@ -38,6 +45,7 @@ Default outputs should include only the pieces that materially help the user rig
 
 Common deliverables:
 
+- a short tagline or "about" phrase that makes the asset memorable
 - a one-line value proposition
 - a sharper README opening
 - SEO-friendly phrasing that still reads naturally to humans
@@ -63,11 +71,100 @@ Follow this sequence unless the user asks for only one specific output.
 
 1. Inspect the skill or repo structure.
 2. Identify the real user job, audience, and proof points.
-3. Extract the strongest positioning.
+3. Extract the strongest positioning and headline.
 4. Draft or rewrite the public-facing documentation.
 5. Add examples, demos, and discovery metadata.
 6. Normalize collection integration details when needed.
 7. Flag proof gaps that weaken credibility.
+
+## Repository Showcase Patterns
+
+Use these patterns when the user wants a GitHub-first presentation, especially for open-source skills, agent systems, or workflow repos.
+
+### 1. Lead With A Memorable Promise
+
+Strong repos tend to have a short line that can function as the GitHub "About" text, tagline, and mental handle for the project.
+
+Examples of the pattern:
+
+- a short methodology claim
+- a "what it becomes for you" phrase
+- a single differentiator with attitude
+
+Good outputs here are usually:
+
+- `3-7 word tagline`
+- `100-160 character GitHub description`
+- `1 sentence value proposition`
+
+### 2. Sell The Transformation, Not Just The Inventory
+
+Do not open with a directory listing or a feature dump.
+
+Instead, show the motion:
+
+- messy starting point
+- what the repo changes
+- what the user gets after following it
+
+When the source material supports it, a short "how it works" narrative often beats a flat feature list.
+
+### 3. Put "Try It Now" Near The Top
+
+High-performing open-source READMEs reduce the distance between curiosity and first use.
+
+Bring one of these close to the opening:
+
+- install or quickstart command
+- first prompt to try
+- "verify installation" step
+- "start here" path for the primary persona
+
+Do not bury the first usable action below long philosophy or inventory sections.
+
+### 4. Turn Features Into Benefit-Led Blocks
+
+When listing capabilities, phrase them as mini-promises with proof rather than nouns alone.
+
+Prefer:
+
+- short headline + concrete payoff
+- differentiator + mechanism
+- workflow step + resulting artifact
+
+Avoid:
+
+- undifferentiated bullet piles
+- adjectives without mechanism
+- repeated variants of `powerful`, `advanced`, or `comprehensive`
+
+### 5. Name The Workflow
+
+If the repo has a repeatable process, turn it into a named sequence that visitors can picture.
+
+This is especially strong for:
+
+- methodologies
+- agent workflows
+- skill collections
+- research pipelines
+- build or evaluation systems
+
+### 6. Sync The Public Surfaces
+
+A well-packaged repo does not stop at `README.md`.
+
+Check alignment across:
+
+- GitHub "About" sentence
+- repository topics
+- badges or credibility signals
+- docs link
+- install path
+- release or changelog surfaces
+- community or support links
+
+If the README says one thing and the repo metadata says another, tighten the message.
 
 ## Step 1: Inspect The Asset
 
@@ -80,6 +177,7 @@ Look for:
 - `agents/openai.yaml`
 - scripts that can support a demo
 - references that show depth or rigor
+- GitHub-facing metadata such as repository description, topics, badges, docs links, install instructions, and community links
 
 Do not invent capabilities that are not supported by the files.
 
@@ -113,6 +211,7 @@ Before rewriting anything, answer these questions:
 
 Distill the result into:
 
+- short tagline or "About" phrase
 - one-line value proposition
 - target user
 - trigger situations
@@ -120,6 +219,12 @@ Distill the result into:
 - differentiator
 
 If the skill is broad, narrow it to the most compelling promise rather than listing everything.
+
+Also answer:
+
+- what is the line that earns the scroll?
+- what is the fastest believable way to try this?
+- what one proof asset most reduces skepticism?
 
 ## Step 3: Choose The Right Public Surface
 
@@ -130,6 +235,7 @@ Match the output to the surface the user is trying to improve.
 - Single skill showcase: explain when to use the skill, what happens when invoked, and show example prompts.
 - Release or social post: emphasize problem, transformation, and proof in a tighter format.
 - Awesome-list submission: keep it short, concrete, and legible to maintainers scanning many submissions.
+- GitHub repository metadata: align the tagline, "About" sentence, topics, and primary link with the README promise
 
 If the task is a collection-integration pass for one skill, the minimum public surfaces to update are:
 
@@ -148,9 +254,20 @@ Optimize for fast comprehension.
 Good README openings usually answer, in order:
 
 1. what this is
-2. who it is for
-3. why it is different
-4. how to try it now
+2. why it matters
+3. who it is for
+4. why it is different
+5. how to try it now
+
+For GitHub-facing open-source repos, a strong first screen often looks more like this:
+
+1. title
+2. short tagline
+3. one-line value proposition
+4. 2-4 sentence explanation with target user and differentiator
+5. quickstart or first prompt
+6. 3-5 benefit-led highlights
+7. named workflow or "how it works"
 
 When discoverability matters, make the first screen legible to both people and search engines:
 
@@ -161,6 +278,7 @@ When discoverability matters, make the first screen legible to both people and s
 
 Prefer:
 
+- a memorable line plus a concrete line
 - concrete nouns over abstract claims
 - examples over adjectives
 - one strong promise over five weak ones
@@ -221,12 +339,14 @@ A strong showcase is not only good prose. It also lowers the cost of belief.
 
 Add or improve:
 
+- short tagline variants when the current opening has no hook
 - example prompts
 - more vivid, tempting use examples that make the skill feel desirable rather than merely understandable
 - expected artifacts or outcomes
 - demo steps
 - README openings that naturally include high-intent search terms when appropriate
 - GitHub description
+- GitHub "About" text when the repo has a weaker short description than the README
 - suggested repository topics
 - release title and release notes
 - awesome-list or directory submission copy
@@ -256,6 +376,12 @@ Good showcase examples should:
 - make the before/after transformation visible
 - hint at why this skill beats a generic assistant answer
 - feel specific enough that someone wants to try the prompt immediately
+
+At least one example in a public showcase pack should function like a "hero demo":
+
+- the starting mess is obvious
+- the artifact is desirable
+- the transformation can be imagined in one read
 
 Avoid example prompts that sound like placeholders, such as:
 
@@ -319,6 +445,13 @@ Always distinguish:
 - current examples vs future roadmap
 - broad applicability vs the best-fit use case
 
+If you borrow a bold open-source pattern such as a sharp tagline or ambitious differentiator, back it with one of:
+
+- mechanism
+- workflow
+- proof asset
+- credible limitation note
+
 If the documentation is weak because the skill itself is underspecified, say that the positioning problem is partly a product-definition problem.
 
 Do not polish around missing substance.
@@ -333,6 +466,7 @@ When the user asks for recommendations only, return:
 
 When the user asks for copy or showcase help and the context is incomplete, still return a starter pack:
 
+- short tagline
 - one-line value proposition
 - short README opening
 - "Why It Is Different" section
@@ -347,6 +481,7 @@ When the user asks for edits, update files directly and then summarize:
 
 - what changed
 - what message the new docs now lead with
+- which GitHub-facing surfaces are now aligned
 - what proof or demo gap still remains
 
 When a non-`hwamony` skill is being adopted into this collection, do not stop after the first file edit.

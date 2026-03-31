@@ -1,4 +1,4 @@
 interface:
   display_name: "Hwamony Debate Panel"
-  short_description: "Run LangGraph multi-agent debates"
-  default_prompt: "Use $hwamony-debate-panel to scope a debate topic, create five debate personas with system prompts, run the moderated debate, and save a transcript for panel follow-up Q&A."
+  short_description: "Run a moderated multi-agent debate with saved prompts, transcripts, and follow-up Q&A"
+  default_prompt: "Use $hwamony-debate-panel to narrow this topic into a clean resolution, create the debate personas, run a moderated debate, and save the transcript for follow-up questions."

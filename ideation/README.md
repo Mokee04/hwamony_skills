@@ -1,8 +1,23 @@
 # Ideation Skills
 
-Creative ideation skills for turning fuzzy problems into stronger idea directions, naming options, positioning angles, and launch-ready concepts.
+Turn fuzzy problems into stronger idea directions, names, positioning angles, and launch-ready concepts.
 
-This category is most useful when the first question is not “give me 20 ideas,” but “what problem are we actually solving, which directions are worth testing, and how should we name or position the result?”
+This category is most useful when the first question is not “give me 20 ideas,” but “what problem are we actually solving, which directions are worth testing, and how should we name or position the result?” The goal here is not raw volume. It is better structure, stronger distinctions, and ideas that survive contact with actual product or market decisions.
+
+## 🚀 Start Here
+
+Copy one of these prompts:
+
+- `Use $hwamony-creative-thinking to map the real problem behind this brief and keep one surprising but viable direction alive in the shortlist.`
+- `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow, render the concept map, and only then brainstorm solutions.`
+- `Use $hwamony-service-naming-copy to turn this service brief into Korean, English, and hybrid naming candidates with launch copy for the top winner.`
+
+## ✨ Why This Category Is Different
+
+- it pushes the work upstream to the problem and concept level before generating options
+- it preserves contrast between safe and surprising directions instead of flattening everything into one average answer
+- it can move from exploration into recommendation, shortlist, and launch-facing language
+- it is built for decisions, not just idea volume
 
 ## 🧰 Included Skills
 
@@ -66,13 +81,6 @@ It is built for moments when you want:
 - more interesting ideas
 - clearer distinctions between options
 - a path from exploration to decision
-
-## ✍️ Quick Prompts
-
-- `Use $hwamony-creative-thinking to figure out why users keep asking for more features but still do not adopt the product, then map the core concepts before we generate fixes.`
-- `Use $hwamony-creative-thinking to generate naming directions for this AI product, then narrow to the 5 strongest candidates while keeping one more surprising lane alive.`
-- `Use $hwamony-creative-thinking to diagnose the hidden issue in this workflow, render the concept map, and only then brainstorm solutions.`
-- `Use $hwamony-service-naming-copy to turn this service brief into Korean, English, and hybrid naming candidates with launch copy for the top winner.`
 
 ## ⚖️ License Note
 
